@@ -68,6 +68,12 @@
   };
 
   const ctx = els.stage.getContext("2d");
+  const recording = window.createCanvasRecorder(els.stage, (busy) => {
+    // Preserve recording dimensions; physics, gestures, colors and backgrounds stay live.
+    els.compose.disabled = busy || state.generating;
+    els.compose.title = busy ? "请先停止录制，再重新生成画布" : "";
+    if (!busy) resizeCanvas();
+  });
 
   function updateCharacterCount() {
     const count = Array.from(els.input.value).length;
@@ -154,14 +160,16 @@
     state.viewScale = Math.max(0.1, Math.min(availableWidth / state.width, availableHeight / state.height));
     const cssWidth = state.width * state.viewScale;
     const cssHeight = state.height * state.viewScale;
-    state.dpr = Math.min(window.devicePixelRatio || 1, 2);
+    if (!recording.busy) state.dpr = Math.min(window.devicePixelRatio || 1, 2);
     els.stage.style.width = `${cssWidth}px`;
     els.stage.style.height = `${cssHeight}px`;
     els.stage.style.position = "absolute";
     els.stage.style.left = `${(availableWidth - cssWidth) / 2}px`;
     els.stage.style.top = `${(availableHeight - cssHeight) / 2}px`;
-    els.stage.width = Math.round(state.width * state.dpr);
-    els.stage.height = Math.round(state.height * state.dpr);
+    if (!recording.busy) {
+      els.stage.width = Math.round(state.width * state.dpr);
+      els.stage.height = Math.round(state.height * state.dpr);
+    }
     draw();
   }
 
@@ -367,6 +375,7 @@
   }
 
   function setGenerating(isGenerating) {
+    recording.setAvailable(!isGenerating && state.generated);
     state.generating = isGenerating;
     els.compose.classList.toggle("is-working", isGenerating);
     els.compose.querySelector("span:first-child").textContent = isGenerating ? "正在分析字形…" : "生成画布";
@@ -376,6 +385,7 @@
   function waitForPaint() { return new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve))); }
 
   async function compose() {
+    if (recording.busy || state.generating) return;
     if (!els.input.value.trim()) { els.input.focus(); els.state.textContent = "请输入文字"; return; }
     endPointer();
     setGenerating(true);

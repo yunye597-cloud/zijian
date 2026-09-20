@@ -997,6 +997,14 @@ footer {
 .parameter-control.is-disabled input::-moz-range-thumb { background: #aaa; box-shadow: 0 0 0 1px #aaa; }
 .canvas-toolbar { flex-wrap: wrap; gap: 12px; }
 .toolbar-actions { flex-wrap: wrap; }
+.record-status { align-self: center; color: var(--red); font-size: 11px; font-variant-numeric: tabular-nums; }
+#record-button.is-recording { color: var(--red); border-color: var(--red); }
+.record-result { min-width: 0; padding: 0 18px; background: var(--paper); font-size: 12px; }
+.record-result p { line-height: 1.6; }
+#record-preview { padding-bottom: 18px; }
+#record-video { display: block; width: 100%; max-height: 360px; background: #fff; }
+#save-video { display: inline-block; padding: 10px 16px; margin-top: 12px; background: var(--red); color: white; text-decoration: none; }
+#record-preview small { display: block; margin-top: 8px; color: var(--ink-soft); line-height: 1.5; }
 #stage { background: #fff; box-shadow: 0 2px 12px rgba(43,39,32,.08); }
 footer { justify-content: center; text-align: center; line-height: 1.8; padding-block: 18px; }
 @media (min-width: 781px) and (max-width: 1180px) { .effect-presets { grid-template-columns: repeat(4, minmax(0, 1fr)); } }

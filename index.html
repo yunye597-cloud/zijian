@@ -8,7 +8,7 @@
       content="将中文排版转化为可触摸、可崩解的视觉连通部件。"
     />
     <title>字间 · 汉字崩解实验室</title>
-    <link rel="stylesheet" href="styles.css?v=6" />
+    <link rel="stylesheet" href="styles.css?v=7" />
   </head>
   <body>
     <div class="shell">
@@ -102,6 +102,8 @@
                 <strong id="canvas-state">等待生成</strong>
               </div>
               <div class="toolbar-actions">
+                <button id="record-button" type="button" disabled>录制视频</button>
+                <span id="record-status" class="record-status" hidden></span>
                 <button id="export-button" type="button" disabled>
                   <span aria-hidden="true">⇩</span> 导出透明 PNG
                 </button>
@@ -142,6 +144,15 @@
                 <strong id="stat-fallback">—</strong>
               </div>
               <p id="analysis-note">按字体的像素连通区域拆分；识别不稳定时保留整字。</p>
+            </div>
+            <div class="record-result">
+              <p id="record-note" role="status" hidden></p>
+              <div id="record-preview" hidden>
+                <p>视频预览</p>
+                <video id="record-video" controls playsinline preload="metadata" aria-label="作品录像预览"></video>
+                <a id="save-video" download>保存视频</a>
+                <small>手机上也可以通过视频播放器菜单保存或分享。</small>
+              </div>
             </div>
           </section>
 
@@ -248,6 +259,7 @@
     </div>
 
     <noscript>这个实验需要启用 JavaScript 才能运行。</noscript>
-    <script src="app.js?v=6"></script>
+    <script src="recording.js?v=7"></script>
+    <script src="app.js?v=7"></script>
   </body>
 </html>

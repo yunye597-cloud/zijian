@@ -27,8 +27,20 @@ python -m http.server 4173
 
 ## 发布更新
 
-上传 `index.html`、`styles.css` 和 `app.js` 到原站点根目录，覆盖同名文件即可；无需构建或后端服务。HTML 已使用 `v=6` 资源版本号。
+上传 `index.html`、`styles.css`、`app.js` 和 `recording.js` 到原站点根目录，覆盖同名文件即可；无需构建或后端服务。HTML 已使用 `v=7` 资源版本号。
 
 作用半径可在 20–200 之间调整；微风预设将该滑块置灰并显示“自动”，实际范围按当前已生成画布对角线的 1.5 倍计算，覆盖整张纸。切换其他预设后恢复可调。
 
-如果腾讯云项目已关联 GitHub 的 `main` 分支，推送后请在腾讯云控制台核对构建和部署状态；否则需手动上传这三个文件。发布后刷新网页，确认出现“导出带背景 PNG”和“微风”按钮。
+本站使用 CloudBase 应用 `zijian`，GitHub 推送不会自动部署。发布后刷新网页，确认出现“录制视频”按钮。
+
+## 手动录制视频
+
+生成画布后，点击“录制视频”，操作作品，点击“停止录制”，即可预览并保存。录像包括背景与运动中的文字，不含网页界面、录制提示、系统鼠标或声音。所有录制和编码在本地浏览器完成。
+
+实现使用作品 canvas 的 `captureStream(30)` 和原生 `MediaRecorder`，按 `isTypeSupported()` 检测 MP4/H.264、MP4、WebM/VP9、WebM/VP8、WebM，并在构造或启动失败时尝试下一个候选。文件类型和扩展名依据实际录制结果，不会把 WebM 改名成 MP4。使用 4 Mbps 目标码率，不额外逐帧复制画布或加载转码库；编码负载依设备而异。
+
+录制期间仍可触摸、调整物理参数、暂停、复位和更改颜色、背景。为保持视频尺寸稳定，暂时禁用重新生成画布；窗口大小变化仅调整显示尺寸。停止后释放录制流；重复录制生成新结果后释放上一段视频资源。移动端切到后台或锁屏可能暂停浏览器动画，建议保持页面在前台直到手动停止。较长视频会占用设备内存。
+
+没有原生录制支持时显示友好提示。手机保存行为由浏览器决定，支持下载链接和原生视频控件。已在 Windows Edge 中实测 MP4、WebM 录制、播放和下载；Android WebView、QQ、夸克和 iPhone Safari 尚需真机验证，不按浏览器名称或 User-Agent 假定支持格式。
+
+API 参考：[MediaRecorder 格式检测](https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder/isTypeSupported_static)、[MediaRecorder 构造选项](https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder/MediaRecorder)。
