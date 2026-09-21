@@ -27,7 +27,7 @@ python -m http.server 4173
 
 ## 发布更新
 
-上传 `index.html`、`styles.css`、`app.js` 和 `recording.js` 到原站点根目录，覆盖同名文件即可；无需构建或后端服务。HTML 已使用 `v=7` 资源版本号。
+上传 `index.html`、`styles.css`、`app.js` 和 `recording.js` 到原站点根目录，覆盖同名文件即可；无需构建或后端服务。字体功能的资源版本号为 `v=8`，录制脚本未改动。
 
 作用半径可在 20–200 之间调整；微风预设将该滑块置灰并显示“自动”，实际范围按当前已生成画布对角线的 1.5 倍计算，覆盖整张纸。切换其他预设后恢复可调。
 
@@ -44,3 +44,17 @@ python -m http.server 4173
 没有原生录制支持时显示友好提示。手机保存行为由浏览器决定，支持下载链接和原生视频控件。已在 Windows Edge 中实测 MP4、WebM 录制、播放和下载；Android WebView、QQ、夸克和 iPhone Safari 尚需真机验证，不按浏览器名称或 User-Agent 假定支持格式。
 
 API 参考：[MediaRecorder 格式检测](https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder/isTypeSupported_static)、[MediaRecorder 构造选项](https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder/MediaRecorder)。
+
+## 字体选择与本地字体
+
+版面区域提供默认、宋体、黑体、楷体、仿宋五个选项，仅使用系统字体栈，不下载字体或依赖外部 CDN。设备没有某种字体或字体缺少某个字符时使用备用字体，因此不同设备的实际字形可能不同。
+
+按照需求第五部分，选择或上传字体只更新待生成的排版参数，并提示“字体已改动，重新生成画布后生效。”，不会自动覆盖正在编辑或录制的作品。点击“生成画布”后才重新排版、读取新字形像素、分析连通区域、拆分粒子和重建相邻关系，同时按原有规则清空撤回记录。
+
+支持 TTF、OTF、WOFF、WOFF2（单个不超过 50 MB）：读取本地文件的二进制数据，等待 `FontFace.load()` / `face.loaded` 完成，再注册到 `document.fonts`。上传成功后自动选中该字体；名称取自文件名，同名选项增加序号，内部使用独立名称避免冲突。文件不会发送到服务器，也不保存到本地持久存储，刷新后需重新选择文件。
+
+生成时先等待所选字体和 `document.fonts.load()`，然后才测量和绘制。测量和逐字绘制使用同一个字体设置。生成中切换字体会丢弃旧任务的临时粒子，保留原画布；上传完成较晚的旧请求不能覆盖新的选择。上传失败保留原选择和原画布。不支持 FontFace 的浏览器仍可使用内置系统字体。
+
+已实测 Windows Edge 默认与黑体的不同字形和粒子、楷体 TTF、MiSans OTF、重复文件名、取消选择、无效类型、损坏字体、延迟加载、过期任务、触摸模拟、撤回、PNG 导出和窄屏布局。手机触摸为浏览器模拟，iPhone Safari、Android WebView、QQ、夸克仍需真机检查。字体自身缺字会回退；原有固定字形边距对于极端装饰字体可能不够，并未借本次修改改变原拆字算法。
+
+字体 API 参考：[CSS Font Loading API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Font_Loading_API)。

@@ -982,6 +982,12 @@ footer {
 }
 
 /* Appearance controls and compact preset guidance. */
+.font-controls { margin-bottom: 14px; }
+.font-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 8px; align-items: center; font-size: 11px; }
+.font-row select, .font-row button { min-width: 0; min-height: 32px; padding: 5px; border: 1px solid var(--line-strong); background: var(--paper); color: var(--ink); font: inherit; }
+.font-row button { cursor: pointer; }
+.font-row button:disabled { opacity: .5; cursor: not-allowed; }
+#font-status { color: var(--red); }
 .appearance-controls { margin-top: 20px; padding-top: 14px; border-top: 1px solid var(--line); }
 .color-row, .fit-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 14px; font-size: 11px; }
 .color-row input { width: 46px; height: 30px; padding: 2px; border: 1px solid var(--line-strong); background: transparent; cursor: pointer; }

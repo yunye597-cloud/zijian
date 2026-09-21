@@ -8,7 +8,7 @@
       content="将中文排版转化为可触摸、可崩解的视觉连通部件。"
     />
     <title>字间 · 汉字崩解实验室</title>
-    <link rel="stylesheet" href="styles.css?v=7" />
+    <link rel="stylesheet" href="styles.css?v=8" />
   </head>
   <body>
     <div class="shell">
@@ -49,6 +49,22 @@
                 <small>LAYOUT</small>
               </div>
 
+              <div class="font-controls">
+                <div class="font-row">
+                  <label for="font-family">字体</label>
+                  <select id="font-family" aria-describedby="font-note font-status">
+                    <option value="default">默认字体</option>
+                    <option value="song">宋体 / 明朝体</option>
+                    <option value="sans">黑体 / 无衬线</option>
+                    <option value="kai">楷体</option>
+                    <option value="fangsong">仿宋</option>
+                  </select>
+                  <button id="upload-font" type="button">上传字体</button>
+                  <input id="font-file" type="file" accept=".ttf,.otf,.woff,.woff2" hidden />
+                </div>
+                <p id="font-status" class="appearance-note" role="status" hidden></p>
+                <p id="font-note" class="appearance-note">字体仅在本地加载，不会上传。系统缺少所选字体或字符时使用备用字体；本地字体刷新后需重新选择。</p>
+              </div>
               <label class="range-row" for="layout-width">
                 <span>宽度</span>
                 <input id="layout-width" type="range" min="360" max="1000" value="720" step="10" />
@@ -260,6 +276,6 @@
 
     <noscript>这个实验需要启用 JavaScript 才能运行。</noscript>
     <script src="recording.js?v=7"></script>
-    <script src="app.js?v=7"></script>
+    <script src="app.js?v=8"></script>
   </body>
 </html>

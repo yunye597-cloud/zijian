@@ -60,6 +60,7 @@
   const controls = Object.fromEntries([...layoutInputs, ...physicsInputs].map((id) => [id, document.getElementById(id)]));
 
   const state = {
+    fontRevision: 0, fontLoading: false, renderedFont: null,
     history: [], pointerId: null, generating: false, backgroundImage: null, backgroundRequest: 0,
     particles: [], width: 720, height: 640, dpr: 1, viewScale: 1,
     paused: false, generated: false, lastTime: 0, elapsed: 0, raf: 0,
@@ -70,9 +71,82 @@
   const ctx = els.stage.getContext("2d");
   const recording = window.createCanvasRecorder(els.stage, (busy) => {
     // Preserve recording dimensions; physics, gestures, colors and backgrounds stay live.
-    els.compose.disabled = busy || state.generating;
+    els.compose.disabled = busy || state.generating || state.fontLoading;
     els.compose.title = busy ? "请先停止录制，再重新生成画布" : "";
     if (!busy) resizeCanvas();
+  });
+
+  const defaultFont = '"Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", serif';
+  const fonts = new Map([
+    ["default", { family: defaultFont }],
+    ["song", { family: '"SimSun", "Songti SC", "STSong", "Noto Serif CJK SC", serif' }],
+    ["sans", { family: '"Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "Droid Sans Fallback", sans-serif' }],
+    ["kai", { family: '"KaiTi", "STKaiti", "Kaiti SC", "DFKai-SB", ' + defaultFont }],
+    ["fangsong", { family: '"FangSong", "STFangsong", ' + defaultFont }],
+  ]);
+  const fontSelect = $("#font-family");
+  const fontFile = $("#font-file");
+  let fontSequence = 0;
+  function fontMessage(message) {
+    $("#font-status").textContent = message;
+    $("#font-status").hidden = !message;
+  }
+  function fontChanged() {
+    state.fontRevision += 1;
+    state.fontLoading = false;
+    els.compose.disabled = state.generating || recording.busy;
+    fontMessage("字体已改动，重新生成画布后生效。");
+  }
+  fontSelect.addEventListener("change", fontChanged);
+  $("#upload-font").addEventListener("click", () => fontFile.click());
+  if (typeof FontFace !== "function" || !document.fonts) {
+    $("#upload-font").disabled = true;
+    fontMessage("当前浏览器不支持本地字体加载，仍可选择系统字体。");
+  }
+  fontFile.addEventListener("change", async () => {
+    const file = fontFile.files[0];
+    fontFile.value = ""; // Permit choosing the same file again, including after failure.
+    if (!file) return;
+    const revision = ++state.fontRevision;
+    state.fontLoading = false;
+    els.compose.disabled = state.generating || recording.busy;
+    if (!/\.(ttf|otf|woff2?)$/i.test(file.name)) {
+      fontMessage("请选择 TTF、OTF、WOFF 或 WOFF2 字体文件。"); return;
+    }
+    if (!file.size || file.size > 50 * 1024 * 1024) {
+      fontMessage("请选择有效且不超过 50 MB 的字体文件。"); return;
+    }
+    state.fontLoading = true;
+    els.compose.disabled = true;
+    fontMessage("正在本地加载字体…");
+    try {
+      const buffer = await file.arrayBuffer();
+      if (revision !== state.fontRevision) return;
+      // The filename is only a label, never CSS. Every face gets a unique internal name.
+      const id = `local-${++fontSequence}`;
+      const internalName = `ZijianLocal${fontSequence}`;
+      const face = new FontFace(internalName, buffer, { weight: "500" });
+      await face.load();
+      await face.loaded;
+      if (revision !== state.fontRevision) return;
+      if (face.status !== "loaded") throw new Error("Font not ready");
+      document.fonts.add(face);
+      const baseName = file.name.replace(/\.(ttf|otf|woff2?)$/i, "");
+      let label = baseName, suffix = 2;
+      const labels = new Set(Array.from(fontSelect.options, option => option.textContent));
+      while (labels.has(label)) label = `${baseName} (${suffix++})`;
+      fonts.set(id, { family: `"${internalName}", ${defaultFont}`, face });
+      fontSelect.add(new Option(label, id));
+      fontSelect.value = id;
+      fontMessage("字体已改动，重新生成画布后生效。");
+    } catch {
+      if (revision === state.fontRevision) fontMessage("字体无法加载，请换一个有效的字体文件。原画布和已选字体仍保留。");
+    } finally {
+      if (revision === state.fontRevision) {
+        state.fontLoading = false;
+        els.compose.disabled = state.generating || recording.busy;
+      }
+    }
   });
 
   function updateCharacterCount() {
@@ -111,6 +185,7 @@
       width: Number(controls["layout-width"].value), height: Number(controls["layout-height"].value),
       fontSize: Number(controls["font-size"].value), lineHeight: Number(controls["line-height"].value),
       letterSpacing: Number(controls["letter-spacing"].value), fragmentation: Number(controls.fragmentation.value),
+      fontId: fontSelect.value, fontFamily: fonts.get(fontSelect.value).family,
     };
   }
 
@@ -176,8 +251,7 @@
   function layoutGlyphs(text, settings) {
     const measureCanvas = document.createElement("canvas");
     const measure = measureCanvas.getContext("2d");
-    const fontFamily = '"Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", serif';
-    const font = `500 ${settings.fontSize}px ${fontFamily}`;
+    const font = `500 ${settings.fontSize}px ${settings.fontFamily}`;
     measure.font = font;
     measure.textBaseline = "alphabetic";
     const padding = Math.max(26, settings.fontSize * 1.15);
@@ -379,54 +453,72 @@
     state.generating = isGenerating;
     els.compose.classList.toggle("is-working", isGenerating);
     els.compose.querySelector("span:first-child").textContent = isGenerating ? "正在分析字形…" : "生成画布";
-    els.compose.disabled = isGenerating;
+    els.compose.disabled = isGenerating || state.fontLoading || recording.busy;
   }
 
   function waitForPaint() { return new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve))); }
 
   async function compose() {
-    if (recording.busy || state.generating) return;
+    if (recording.busy || state.generating || state.fontLoading) return;
     if (!els.input.value.trim()) { els.input.focus(); els.state.textContent = "请输入文字"; return; }
     endPointer();
     setGenerating(true);
-    els.state.textContent = "正在分析字形";
-    await waitForPaint();
+    const revision = state.fontRevision;
     const settings = getLayout();
-    const laidOut = layoutGlyphs(els.input.value, settings);
-    const particles = [];
-    let fallbackCount = 0;
-    for (let i = 0; i < laidOut.glyphs.length; i += 1) {
-      const result = splitGlyph(laidOut.glyphs[i], settings.fragmentation);
-      if (result.fallback) fallbackCount += 1;
-      particles.push(...result.pieces);
-      if (i % 16 === 0) await new Promise((resolve) => setTimeout(resolve, 0));
+    const text = els.input.value;
+    try {
+      els.state.textContent = "正在准备字体";
+      const selectedFont = fonts.get(settings.fontId);
+      if (selectedFont.face) await selectedFont.face.loaded;
+      if (document.fonts) await document.fonts.load(`500 ${settings.fontSize}px ${settings.fontFamily}`, text);
+      if (revision !== state.fontRevision) return;
+      els.state.textContent = "正在分析字形";
+      await waitForPaint();
+      if (revision !== state.fontRevision) return;
+      const laidOut = layoutGlyphs(text, settings);
+      const particles = [];
+      let fallbackCount = 0;
+      for (let i = 0; i < laidOut.glyphs.length; i += 1) {
+        const result = splitGlyph(laidOut.glyphs[i], settings.fragmentation);
+        if (result.fallback) fallbackCount += 1;
+        particles.push(...result.pieces);
+        if (i % 16 === 0) await new Promise((resolve) => setTimeout(resolve, 0));
+        if (revision !== state.fontRevision) return;
+      }
+      assignNeighbors(particles);
+      Object.assign(state, { width: settings.width, height: settings.height, particles, generated: true, paused: false, lastTime: 0, elapsed: 0 });
+      state.renderedFont = settings.fontId;
+      fontMessage("");
+      els.canvasShell.classList.remove("is-empty");
+      els.empty.hidden = true;
+      els.hint.hidden = false;
+      els.hint.style.opacity = "1";
+      clearTimeout(state.hintTimer);
+      state.hintTimer = setTimeout(() => { els.hint.style.opacity = "0"; }, 4800);
+      clearHistory();
+      recolorParticles();
+      updateBackgroundNote();
+      els.exportBackground.disabled = false;
+      els.export.disabled = false;
+      els.reset.disabled = false;
+      els.pause.disabled = false;
+      els.pause.innerHTML = '<span aria-hidden="true">Ⅱ</span> 暂停';
+      els.statGlyphs.textContent = laidOut.glyphs.length.toLocaleString("zh-CN");
+      els.statParts.textContent = particles.length.toLocaleString("zh-CN");
+      els.statFallback.textContent = fallbackCount.toLocaleString("zh-CN");
+      els.state.textContent = "可以触碰";
+      const clippedMessage = laidOut.clipped ? " 版面已满，超出文字未绘制。" : "";
+      els.analysisNote.textContent = `当前按“${fragmentationName(settings.fragmentation)}”尺度生成 ${particles.length} 个碎片；${fallbackCount} 个字采用整字降级。${clippedMessage}`;
+      resizeCanvas();
+      cancelAnimationFrame(state.raf);
+      state.raf = requestAnimationFrame(animate);
+    } catch {
+      els.state.textContent = "生成未完成";
+      if (revision === state.fontRevision) fontMessage("字体或字形生成失败，请换一种字体后重试。原画布仍保留。");
+    } finally {
+      if (revision !== state.fontRevision) els.state.textContent = "字体已改动，请重新生成";
+      setGenerating(false);
     }
-    assignNeighbors(particles);
-    Object.assign(state, { width: settings.width, height: settings.height, particles, generated: true, paused: false, lastTime: 0, elapsed: 0 });
-    els.canvasShell.classList.remove("is-empty");
-    els.empty.hidden = true;
-    els.hint.hidden = false;
-    els.hint.style.opacity = "1";
-    clearTimeout(state.hintTimer);
-    state.hintTimer = setTimeout(() => { els.hint.style.opacity = "0"; }, 4800);
-    clearHistory();
-    recolorParticles();
-    updateBackgroundNote();
-    els.exportBackground.disabled = false;
-    els.export.disabled = false;
-    els.reset.disabled = false;
-    els.pause.disabled = false;
-    els.pause.innerHTML = '<span aria-hidden="true">Ⅱ</span> 暂停';
-    els.statGlyphs.textContent = laidOut.glyphs.length.toLocaleString("zh-CN");
-    els.statParts.textContent = particles.length.toLocaleString("zh-CN");
-    els.statFallback.textContent = fallbackCount.toLocaleString("zh-CN");
-    els.state.textContent = "可以触碰";
-    const clippedMessage = laidOut.clipped ? " 版面已满，超出文字未绘制。" : "";
-    els.analysisNote.textContent = `当前按“${fragmentationName(settings.fragmentation)}”尺度生成 ${particles.length} 个碎片；${fallbackCount} 个字采用整字降级。${clippedMessage}`;
-    setGenerating(false);
-    resizeCanvas();
-    cancelAnimationFrame(state.raf);
-    state.raf = requestAnimationFrame(animate);
   }
 
   function resetParticles() {
