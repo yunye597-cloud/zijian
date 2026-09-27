@@ -248,7 +248,7 @@
     draw();
   }
 
-  function layoutGlyphs(text, settings) {
+  async function layoutGlyphs(text, settings, isCancelled = () => false) {
     const measureCanvas = document.createElement("canvas");
     const measure = measureCanvas.getContext("2d");
     const font = `500 ${settings.fontSize}px ${settings.fontFamily}`;
@@ -261,8 +261,15 @@
     let y = padding + baselineOffset;
     let clipped = false;
     const glyphs = [];
+    const measuredWidths = new Map();
+    let batchStart = performance.now();
 
     for (const char of Array.from(text)) {
+      if (performance.now() - batchStart >= 12) {
+        await yieldGeneration();
+        if (isCancelled()) return { glyphs: [], clipped: false };
+        batchStart = performance.now();
+      }
       if (char === "\r") continue;
       if (char === "\n") {
         x = padding;
@@ -270,8 +277,8 @@
         if (y + settings.fontSize * 0.3 > settings.height - padding) { clipped = true; break; }
         continue;
       }
-      const metrics = measure.measureText(char);
-      const width = Math.max(metrics.width, settings.fontSize * (char.trim() ? 0.55 : 0.5));
+      if (!measuredWidths.has(char)) measuredWidths.set(char, measure.measureText(char).width);
+      const width = Math.max(measuredWidths.get(char), settings.fontSize * (char.trim() ? 0.55 : 0.5));
       const advance = width + settings.letterSpacing;
       if (x + width > settings.width - padding && char.trim()) { x = padding; y += lineAdvance; }
       if (y + settings.fontSize * 0.3 > settings.height - padding) { clipped = true; break; }
@@ -360,6 +367,8 @@
     return kept;
   }
 
+  const pieceColors = new WeakMap();
+
   function createPiece(group, image, imageWidth, scale, pad, baseline, glyph, index, fallback) {
     const cropWidth = group.maxX - group.minX + 1;
     const cropHeight = group.maxY - group.minY + 1;
@@ -371,12 +380,12 @@
     for (const pixelIndex of group.pixels) {
       const px = pixelIndex % imageWidth;
       const py = Math.floor(pixelIndex / imageWidth);
-      const source = pixelIndex * 4;
       const target = ((py - group.minY) * cropWidth + (px - group.minX)) * 4;
       pieceData.data[target] = 37; pieceData.data[target + 1] = 35; pieceData.data[target + 2] = 31;
-      pieceData.data[target + 3] = image.data[source + 3];
+      pieceData.data[target + 3] = image.alpha[pixelIndex];
     }
     pieceCtx.putImageData(pieceData, 0, 0);
+    pieceColors.set(pieceCanvas, "#25231f");
     const localX = group.minX / scale - pad;
     const localY = group.minY / scale - baseline;
     const drawWidth = cropWidth / scale;
@@ -390,15 +399,65 @@
     };
   }
 
+  // Cache only glyph images/local geometry, never mutable particle motion or neighbors.
+  // Pixel storage is bounded; eviction cannot invalidate particles already on the canvas.
+  const glyphCache = new Map();
+  let glyphCacheBytes = 0;
+  // Scale-independent source data: retain only alpha (RGB is replaced in createPiece).
+  const glyphAnalysisCache = new Map();
+  let glyphAnalysisBytes = 0;
+  const glyphScratch = document.createElement("canvas");
+  const glyphContext = glyphScratch.getContext("2d", { willReadFrequently: true });
+  if (document.fonts) document.fonts.addEventListener("loadingdone", () => {
+    glyphCache.clear(); glyphCacheBytes = 0;
+    glyphAnalysisCache.clear(); glyphAnalysisBytes = 0;
+  });
+
   function splitGlyph(glyph, fragmentation) {
+    const key = JSON.stringify([glyph.char, glyph.font, glyph.fontSize, glyph.width, fragmentation, 2]);
+    let cached = glyphCache.get(key);
+    if (cached) {
+      glyphCache.delete(key); glyphCache.set(key, cached);
+    } else {
+      const result = analyzeGlyph({ ...glyph, x: 0, y: 0 }, fragmentation);
+      const templates = result.pieces.map(p => ({ image: p.image, width: p.width, height: p.height,
+        localX: p.originX - p.width / 2, localY: p.originY - p.height / 2 }));
+      const bytes = templates.reduce((sum, p) => sum + p.image.width * p.image.height * 4 + 256, 0);
+      cached = { templates, fallback: result.fallback, bytes };
+      glyphCache.set(key, cached); glyphCacheBytes += bytes;
+      while (glyphCache.size > 1024 || glyphCacheBytes > 24 * 1024 * 1024) {
+        const oldest = glyphCache.keys().next().value;
+        glyphCacheBytes -= glyphCache.get(oldest).bytes;
+        glyphCache.delete(oldest);
+      }
+    }
+    return { fallback: cached.fallback, pieces: cached.templates.map((p, index) => {
+      const originX = glyph.x + p.localX + p.width / 2;
+      const originY = glyph.y + p.localY + p.height / 2;
+      return { image: p.image, width: p.width, height: p.height, x: originX, y: originY, originX, originY,
+        vx: 0, vy: 0, angle: 0, angularVelocity: 0, active: false, activeAge: 0, damage: 0,
+        fallback: cached.fallback, neighbors: [],
+        seed: ((glyph.char.codePointAt(0) || 1) * 31 + index * 71 + Math.round(originX * 3)) % 1009 };
+    }) };
+  }
+
+  function getGlyphAnalysis(glyph) {
+    const key = JSON.stringify([glyph.char, glyph.font, glyph.fontSize, glyph.width, 2]);
+    let cached = glyphAnalysisCache.get(key);
+    if (cached) {
+      glyphAnalysisCache.delete(key); glyphAnalysisCache.set(key, cached);
+      return cached;
+    }
     const scale = 2;
     const pad = Math.ceil(glyph.fontSize * 0.42);
     const width = Math.ceil((glyph.width + pad * 2) * scale);
     const height = Math.ceil((glyph.fontSize * 1.55 + pad * 2) * scale);
-    const offscreen = document.createElement("canvas");
-    offscreen.width = width;
-    offscreen.height = height;
-    const off = offscreen.getContext("2d", { willReadFrequently: true });
+    const offscreen = glyphScratch;
+    if (offscreen.width !== width) offscreen.width = width;
+    if (offscreen.height !== height) offscreen.height = height;
+    const off = glyphContext;
+    off.setTransform(1, 0, 0, 1, 0, 0);
+    off.clearRect(0, 0, width, height);
     off.scale(scale, scale);
     off.fillStyle = "#25231f";
     off.font = glyph.font;
@@ -408,6 +467,21 @@
     off.setTransform(1, 0, 0, 1, 0, 0);
     const image = off.getImageData(0, 0, width, height);
     const connected = mergeTinyComponents(findConnectedComponents(image.data, width, height, 42), width, height);
+    const alpha = new Uint8Array(width * height);
+    for (let i = 0; i < alpha.length; i += 1) alpha[i] = image.data[i * 4 + 3];
+    const bytes = alpha.byteLength + connected.reduce((sum, part) => sum + part.pixels.length * 8 + 128, 0) + 256;
+    cached = { image: { alpha }, connected, width, height, scale, pad, baseline, bytes };
+    glyphAnalysisCache.set(key, cached); glyphAnalysisBytes += bytes;
+    while (glyphAnalysisCache.size > 1024 || glyphAnalysisBytes > 16 * 1024 * 1024) {
+      const oldest = glyphAnalysisCache.keys().next().value;
+      glyphAnalysisBytes -= glyphAnalysisCache.get(oldest).bytes;
+      glyphAnalysisCache.delete(oldest);
+    }
+    return cached;
+  }
+
+  function analyzeGlyph(glyph, fragmentation) {
+    const { image, connected, width, height, scale, pad, baseline } = getGlyphAnalysis(glyph);
     if (!connected.length) return { pieces: [], fallback: true };
     let groups;
     let fallback = false;
@@ -422,7 +496,7 @@
     return { fallback, pieces: groups.map((group, index) => createPiece(group, image, width, scale, pad, baseline, glyph, index, fallback)) };
   }
 
-  function assignNeighbors(particles) {
+  async function assignNeighbors(particles, isCancelled = () => false) {
     const cellSize = 58;
     const buckets = new Map();
     particles.forEach((particle, index) => {
@@ -430,7 +504,15 @@
       if (!buckets.has(key)) buckets.set(key, []);
       buckets.get(key).push(index);
     });
-    particles.forEach((particle) => {
+    let batchStart = performance.now();
+    for (let particleIndex = 0; particleIndex < particles.length; particleIndex += 1) {
+      if (performance.now() - batchStart >= 12) {
+        els.state.textContent = `正在连接部件 ${particleIndex} / ${particles.length}`;
+        await yieldGeneration();
+        if (isCancelled()) return;
+        batchStart = performance.now();
+      }
+      const particle = particles[particleIndex];
       const cx = Math.floor(particle.originX / cellSize);
       const cy = Math.floor(particle.originY / cellSize);
       const nearby = [];
@@ -439,13 +521,24 @@
           for (const index of buckets.get(`${cx + ox}:${cy + oy}`) || []) {
             const candidate = particles[index];
             if (candidate === particle) continue;
-            const distance = Math.hypot(candidate.originX - particle.originX, candidate.originY - particle.originY);
-            if (distance < 72) nearby.push({ index, distance });
+            const dx = candidate.originX - particle.originX;
+            const dy = candidate.originY - particle.originY;
+            const limit = nearby.length === 6 ? nearby[5].distance : 72;
+            // Reject only candidates provably outside the current search radius.
+            // Keep hypot for survivors to preserve distance ordering and ties.
+            if (Math.abs(dx) >= limit || Math.abs(dy) >= limit) continue;
+            const distance = Math.hypot(dx, dy);
+            if (distance >= 72 || (nearby.length === 6 && distance >= nearby[5].distance)) continue;
+            // Keep the same stable nearest-six order without sorting every candidate.
+            const insertion = nearby.findIndex(item => item.distance > distance);
+            if (insertion === -1) nearby.push({ index, distance });
+            else nearby.splice(insertion, 0, { index, distance });
+            if (nearby.length > 6) nearby.pop();
           }
         }
       }
-      particle.neighbors = nearby.sort((a, b) => a.distance - b.distance).slice(0, 6).map((item) => item.index);
-    });
+      particle.neighbors = nearby.map((item) => item.index);
+    }
   }
 
   function setGenerating(isGenerating) {
@@ -456,7 +549,14 @@
     els.compose.disabled = isGenerating || state.fontLoading || recording.busy;
   }
 
-  function waitForPaint() { return new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve))); }
+  function yieldGeneration() {
+    if (globalThis.scheduler && typeof globalThis.scheduler.yield === "function") return globalThis.scheduler.yield();
+    return new Promise(resolve => setTimeout(resolve, 0));
+  }
+
+  function waitForPaint() {
+    return new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+  }
 
   async function compose() {
     if (recording.busy || state.generating || state.fontLoading) return;
@@ -475,17 +575,25 @@
       els.state.textContent = "正在分析字形";
       await waitForPaint();
       if (revision !== state.fontRevision) return;
-      const laidOut = layoutGlyphs(text, settings);
+      const isCancelled = () => revision !== state.fontRevision;
+      const laidOut = await layoutGlyphs(text, settings, isCancelled);
+      if (isCancelled()) return;
       const particles = [];
       let fallbackCount = 0;
+      let batchStart = performance.now();
       for (let i = 0; i < laidOut.glyphs.length; i += 1) {
         const result = splitGlyph(laidOut.glyphs[i], settings.fragmentation);
         if (result.fallback) fallbackCount += 1;
         particles.push(...result.pieces);
-        if (i % 16 === 0) await new Promise((resolve) => setTimeout(resolve, 0));
+        if (performance.now() - batchStart >= 12) {
+          els.state.textContent = `正在生成 ${i + 1} / ${laidOut.glyphs.length}`;
+          await yieldGeneration();
+          batchStart = performance.now();
+        }
         if (revision !== state.fontRevision) return;
       }
-      assignNeighbors(particles);
+      await assignNeighbors(particles, isCancelled);
+      if (isCancelled()) return;
       Object.assign(state, { width: settings.width, height: settings.height, particles, generated: true, paused: false, lastTime: 0, elapsed: 0 });
       state.renderedFont = settings.fontId;
       fontMessage("");
@@ -496,7 +604,7 @@
       clearTimeout(state.hintTimer);
       state.hintTimer = setTimeout(() => { els.hint.style.opacity = "0"; }, 4800);
       clearHistory();
-      recolorParticles();
+      recolorParticles(false);
       updateBackgroundNote();
       els.exportBackground.disabled = false;
       els.export.disabled = false;
@@ -700,8 +808,12 @@
     if (!state.lastTime) state.lastTime = time;
     const delta = Math.min((time - state.lastTime) / 1000, 0.032);
     state.lastTime = time;
-    if (!state.paused) update(delta);
-    draw();
+    // Keep the old artwork intact while preparing its replacement; don't make both
+    // generations compete for the main thread. Resume the existing loop on failure.
+    if (!state.generating) {
+      if (!state.paused) update(delta);
+      draw();
+    }
     state.raf = requestAnimationFrame(animate);
   }
 
@@ -738,16 +850,22 @@
     els.state.textContent = "已撤回，点击继续可恢复运动";
     draw();
   }
-  function recolorParticles() {
+  function recolorParticles(render = true) {
+    const images = new Set();
+    const color = $("#text-color").value;
     for (const p of state.particles) {
+      if (images.has(p.image)) continue;
+      images.add(p.image);
+      if (pieceColors.get(p.image) === color) continue;
       const c = p.image.getContext("2d");
       c.save();
       c.globalCompositeOperation = "source-in";
-      c.fillStyle = $("#text-color").value;
+      c.fillStyle = color;
       c.fillRect(0, 0, p.image.width, p.image.height);
       c.restore();
+      pieceColors.set(p.image, color);
     }
-    draw();
+    if (render) draw();
   }
   function drawBackground(target) {
     target.fillStyle = $("#background-color").value;

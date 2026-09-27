@@ -1,0 +1,24 @@
+const {chromium}=require(process.env.PLAYWRIGHT_PATH||'C:/Users/ThinkPad/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const fs=require('node:fs');const assert=require('node:assert/strict');const {instrument}=require('./benchmark.cjs');
+(async()=>{
+ const browser=await chromium.launch({executablePath:process.env.BROWSER_PATH||'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});
+ const page=await browser.newPage({viewport:{width:1440,height:1100},deviceScaleFactor:2});
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const source=instrument(fs.readFileSync('zijian-github/app.js','utf8')).replace('  els.input.value = DEFAULT_TEXT;',`window.cacheInfo=()=>({analysis:glyphAnalysisCache.size,bytes:glyphAnalysisBytes,templates:glyphCache.size});window.forceResize=resizeCanvas;\n  els.input.value = DEFAULT_TEXT;`);
+ await page.route('**/app.js*',r=>r.fulfill({contentType:'text/javascript',body:source}));
+ await page.goto('http://127.0.0.1:4173/zijian-github/');
+ const run=async f=>page.evaluate(async f=>{bench.controls.fragmentation.value=f;bench.totals={};await bench.compose();return bench.totals},f);
+ await page.locator('#text-input').fill('汉字崩解汉字崩解');
+ assert.equal((await run(50)).read.calls,4);
+ assert.equal((await run(35)).read,undefined);assert.equal((await run(90)).connected,undefined);
+ await page.evaluate(()=>bench.controls['font-size'].value=32);assert.equal((await run(90)).read.calls,4);
+ await page.locator('#font-family').selectOption('sans');assert.equal((await run(90)).read.calls,4);
+ await page.evaluate(()=>document.fonts.dispatchEvent(new Event('loadingdone')));assert.equal((await run(90)).read.calls,4);
+ await page.evaluate(()=>{bench.state.paused=true;bench.draw()});
+ const before=await page.locator('#stage').evaluate(c=>c.toDataURL());
+ await page.evaluate(()=>{const d=Object.getOwnPropertyDescriptor(HTMLCanvasElement.prototype,'width');window.writes=0;Object.defineProperty(HTMLCanvasElement.prototype,'width',{...d,set(v){if(this.id==='stage')writes++;d.set.call(this,v)}});forceResize()});
+ assert.equal(await page.evaluate(()=>writes),1);assert.equal(await page.locator('#stage').evaluate(c=>c.toDataURL()),before);
+ await page.locator('#layout-width').fill('800');await run(90);assert.equal(await page.locator('#stage').evaluate(c=>c.width),1600);assert.ok(await page.evaluate(()=>writes)>0);
+ const info=await page.evaluate(()=>cacheInfo());assert.ok(info.bytes<=16*1024*1024&&info.analysis<=1024&&info.templates<=1024);
+ assert.deepEqual(errors,[]);await browser.close();console.log('PASS: scale reuse without reads/DFS, size/font invalidation, loadingdone invalidation, reset preserves pixels, real resize at DPR 2, cache bounds');
+})().catch(e=>{console.error(e);process.exit(1)});

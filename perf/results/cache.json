@@ -1,0 +1,1975 @@
+{
+  "browser": "154.0.4258.37",
+  "throttle": 1,
+  "trials": 3,
+  "rows": [
+    {
+      "kind": "repeat",
+      "n": 50,
+      "trial": 0,
+      "pass": "cold",
+      "ready": 149.70000004768372,
+      "painted": 151.5,
+      "parts": 221,
+      "glyphs": "50",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 2.100000023841858,
+          "calls": 1
+        },
+        "read": {
+          "ms": 2.699999988079071,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 2.3000000715255737,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 1.5,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 4.199999928474426,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 11.800000011920929,
+          "calls": 50
+        },
+        "neighbors": {
+          "ms": 3.699999988079071,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 2,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "repeat",
+      "n": 50,
+      "trial": 0,
+      "pass": "warm",
+      "ready": 56.19999998807907,
+      "painted": 69.5,
+      "parts": 221,
+      "glyphs": "50",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.2999999523162842,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 0.10000002384185791,
+          "calls": 50
+        },
+        "neighbors": {
+          "ms": 2.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.8999999761581421,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "repeat",
+      "n": 50,
+      "trial": 1,
+      "pass": "cold",
+      "ready": 63.69999998807907,
+      "painted": 65,
+      "parts": 221,
+      "glyphs": "50",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 2.300000011920929,
+          "calls": 1
+        },
+        "read": {
+          "ms": 2.699999988079071,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 2.3000000715255737,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 1.6999999284744263,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 3.899999976158142,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 11.899999916553497,
+          "calls": 50
+        },
+        "neighbors": {
+          "ms": 3.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 1.199999988079071,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "repeat",
+      "n": 50,
+      "trial": 1,
+      "pass": "warm",
+      "ready": 29.099999964237213,
+      "painted": 42.59999996423721,
+      "parts": 221,
+      "glyphs": "50",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 0.19999998807907104,
+          "calls": 50
+        },
+        "neighbors": {
+          "ms": 1.899999976158142,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.699999988079071,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "repeat",
+      "n": 50,
+      "trial": 2,
+      "pass": "cold",
+      "ready": 62.69999998807907,
+      "painted": 64,
+      "parts": 221,
+      "glyphs": "50",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 2,
+          "calls": 1
+        },
+        "read": {
+          "ms": 2.099999964237213,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 1.699999988079071,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 1.4000000357627869,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 3.800000011920929,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 10.300000011920929,
+          "calls": 50
+        },
+        "neighbors": {
+          "ms": 2.600000023841858,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 1.5999999642372131,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "repeat",
+      "n": 50,
+      "trial": 2,
+      "pass": "warm",
+      "ready": 33.80000001192093,
+      "painted": 46,
+      "parts": 221,
+      "glyphs": "50",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.3999999761581421,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 0.30000001192092896,
+          "calls": 50
+        },
+        "neighbors": {
+          "ms": 2,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.699999988079071,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "repeat",
+      "n": 200,
+      "trial": 0,
+      "pass": "cold",
+      "ready": 118.89999997615814,
+      "painted": 122.80000001192093,
+      "parts": 875,
+      "glyphs": "200",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 2.199999988079071,
+          "calls": 1
+        },
+        "read": {
+          "ms": 2.4999999403953552,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 1.4999999403953552,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 1.3999999165534973,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 3.8000000715255737,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 11.299999952316284,
+          "calls": 200
+        },
+        "neighbors": {
+          "ms": 19,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 2,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "repeat",
+      "n": 200,
+      "trial": 0,
+      "pass": "warm",
+      "ready": 108.60000002384186,
+      "painted": 111.30000001192093,
+      "parts": 875,
+      "glyphs": "200",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 0.5,
+          "calls": 200
+        },
+        "neighbors": {
+          "ms": 22,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 1.600000023841858,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "repeat",
+      "n": 200,
+      "trial": 1,
+      "pass": "cold",
+      "ready": 110.39999997615814,
+      "painted": 113.59999996423721,
+      "parts": 875,
+      "glyphs": "200",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 2.5,
+          "calls": 1
+        },
+        "read": {
+          "ms": 1.9999998807907104,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 1.7000001072883606,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 1.2000000476837158,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 3.800000011920929,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 10.300000011920929,
+          "calls": 200
+        },
+        "neighbors": {
+          "ms": 17.899999976158142,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 2,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "repeat",
+      "n": 200,
+      "trial": 1,
+      "pass": "warm",
+      "ready": 97.60000002384186,
+      "painted": 102.40000003576279,
+      "parts": 875,
+      "glyphs": "200",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.30000001192092896,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 0.4999999403953552,
+          "calls": 200
+        },
+        "neighbors": {
+          "ms": 22.100000023841858,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 1.5,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "repeat",
+      "n": 200,
+      "trial": 2,
+      "pass": "cold",
+      "ready": 114.80000001192093,
+      "painted": 119.30000001192093,
+      "parts": 875,
+      "glyphs": "200",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 2.5,
+          "calls": 1
+        },
+        "read": {
+          "ms": 2,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 1.2999999523162842,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 1.300000011920929,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 3.399999976158142,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 9.899999916553497,
+          "calls": 200
+        },
+        "neighbors": {
+          "ms": 23.700000047683716,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 2.699999988079071,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "repeat",
+      "n": 200,
+      "trial": 2,
+      "pass": "warm",
+      "ready": 107.5,
+      "painted": 112.09999996423721,
+      "parts": 875,
+      "glyphs": "200",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.5,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 0.5999999642372131,
+          "calls": 200
+        },
+        "neighbors": {
+          "ms": 20.400000035762787,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 1.9000000357627869,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "repeat",
+      "n": 500,
+      "trial": 0,
+      "pass": "cold",
+      "ready": 273.0999999642372,
+      "painted": 282.19999998807907,
+      "parts": 2189,
+      "glyphs": "500",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 2.600000023841858,
+          "calls": 1
+        },
+        "read": {
+          "ms": 2.399999976158142,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 2.5000000596046448,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 0.8000000715255737,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 3.799999952316284,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 12.199999988079071,
+          "calls": 500
+        },
+        "neighbors": {
+          "ms": 74.80000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 3.600000023841858,
+          "calls": 1
+        }
+      },
+      "longest": 98
+    },
+    {
+      "kind": "repeat",
+      "n": 500,
+      "trial": 0,
+      "pass": "warm",
+      "ready": 452.5,
+      "painted": 481.30000001192093,
+      "parts": 2189,
+      "glyphs": "500",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.2999999523162842,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 0.9000000953674316,
+          "calls": 500
+        },
+        "neighbors": {
+          "ms": 72.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 4.199999988079071,
+          "calls": 1
+        }
+      },
+      "longest": 80
+    },
+    {
+      "kind": "repeat",
+      "n": 500,
+      "trial": 1,
+      "pass": "cold",
+      "ready": 258.7000000476837,
+      "painted": 266.5,
+      "parts": 2189,
+      "glyphs": "500",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 2.600000023841858,
+          "calls": 1
+        },
+        "read": {
+          "ms": 1.800000011920929,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 1.9999998807907104,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 1.0000001192092896,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 3.6999998688697815,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 11.099999904632568,
+          "calls": 500
+        },
+        "neighbors": {
+          "ms": 65.20000004768372,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 4,
+          "calls": 1
+        }
+      },
+      "longest": 88
+    },
+    {
+      "kind": "repeat",
+      "n": 500,
+      "trial": 1,
+      "pass": "warm",
+      "ready": 373.30000001192093,
+      "painted": 413.80000001192093,
+      "parts": 2189,
+      "glyphs": "500",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.30000001192092896,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1,
+          "calls": 500
+        },
+        "neighbors": {
+          "ms": 69.69999998807907,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 4.100000023841858,
+          "calls": 1
+        }
+      },
+      "longest": 77
+    },
+    {
+      "kind": "repeat",
+      "n": 500,
+      "trial": 2,
+      "pass": "cold",
+      "ready": 255.0999999642372,
+      "painted": 264.0999999642372,
+      "parts": 2189,
+      "glyphs": "500",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 2.600000023841858,
+          "calls": 1
+        },
+        "read": {
+          "ms": 1.9999999403953552,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 2.100000023841858,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 0.800000011920929,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 3.4999999403953552,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 11.099999964237213,
+          "calls": 500
+        },
+        "neighbors": {
+          "ms": 66.30000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 4.100000023841858,
+          "calls": 1
+        }
+      },
+      "longest": 89
+    },
+    {
+      "kind": "repeat",
+      "n": 500,
+      "trial": 2,
+      "pass": "warm",
+      "ready": 474.69999998807907,
+      "painted": 518.1000000238419,
+      "parts": 2189,
+      "glyphs": "500",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.30000001192092896,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 0.5999999046325684,
+          "calls": 500
+        },
+        "neighbors": {
+          "ms": 71.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 3.400000035762787,
+          "calls": 1
+        }
+      },
+      "longest": 78
+    },
+    {
+      "kind": "repeat",
+      "n": 1000,
+      "trial": 0,
+      "pass": "cold",
+      "ready": 525.3000000119209,
+      "painted": 548.1000000238419,
+      "parts": 4375,
+      "glyphs": "1,000",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 3.5,
+          "calls": 1
+        },
+        "read": {
+          "ms": 2,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 1.5,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 1.5,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 3.7999998927116394,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 13.600000023841858,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 156.60000002384186,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 6.5,
+          "calls": 1
+        }
+      },
+      "longest": 193
+    },
+    {
+      "kind": "repeat",
+      "n": 1000,
+      "trial": 0,
+      "pass": "warm",
+      "ready": 1361.8999999761581,
+      "painted": 1536.699999988079,
+      "parts": 4375,
+      "glyphs": "1,000",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.6000000238418579,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 2.0000001788139343,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 164.10000002384186,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 14.399999976158142,
+          "calls": 1
+        }
+      },
+      "longest": 190
+    },
+    {
+      "kind": "repeat",
+      "n": 1000,
+      "trial": 1,
+      "pass": "cold",
+      "ready": 507.4000000357628,
+      "painted": 520.3000000119209,
+      "parts": 4375,
+      "glyphs": "1,000",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 2.600000023841858,
+          "calls": 1
+        },
+        "read": {
+          "ms": 2.0000000596046448,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 1.699999988079071,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 1.399999976158142,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 4.100000023841858,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 13.499999940395355,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 151.10000002384186,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 6.699999988079071,
+          "calls": 1
+        }
+      },
+      "longest": 184
+    },
+    {
+      "kind": "repeat",
+      "n": 1000,
+      "trial": 1,
+      "pass": "warm",
+      "ready": 1069.8999999761581,
+      "painted": 1275,
+      "parts": 4375,
+      "glyphs": "1,000",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.5,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.1999999284744263,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 171.19999998807907,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 12.100000023841858,
+          "calls": 1
+        }
+      },
+      "longest": 196
+    },
+    {
+      "kind": "repeat",
+      "n": 1000,
+      "trial": 2,
+      "pass": "cold",
+      "ready": 499.89999997615814,
+      "painted": 518.1999999880791,
+      "parts": 4375,
+      "glyphs": "1,000",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 4.300000011920929,
+          "calls": 1
+        },
+        "read": {
+          "ms": 2.299999952316284,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 1.600000023841858,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 1.1999999284744263,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 3.5,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 13.000000178813934,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 146.20000004768372,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 6.899999976158142,
+          "calls": 1
+        }
+      },
+      "longest": 180
+    },
+    {
+      "kind": "repeat",
+      "n": 1000,
+      "trial": 2,
+      "pass": "warm",
+      "ready": 1118,
+      "painted": 1317.3999999761581,
+      "parts": 4375,
+      "glyphs": "1,000",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.5,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.1000000834465027,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 151.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 11.800000011920929,
+          "calls": 1
+        }
+      },
+      "longest": 175
+    },
+    {
+      "kind": "unique",
+      "n": 50,
+      "trial": 0,
+      "pass": "cold",
+      "ready": 96.89999997615814,
+      "painted": 101.69999998807907,
+      "parts": 204,
+      "glyphs": "50",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 205
+        },
+        "layout": {
+          "ms": 7.100000023841858,
+          "calls": 1
+        },
+        "read": {
+          "ms": 13.099999964237213,
+          "calls": 50
+        },
+        "connected": {
+          "ms": 4.200000107288361,
+          "calls": 50
+        },
+        "cells": {
+          "ms": 2.700000047683716,
+          "calls": 50
+        },
+        "pieces": {
+          "ms": 20.699999928474426,
+          "calls": 204
+        },
+        "splitGlyph": {
+          "ms": 44.19999998807907,
+          "calls": 50
+        },
+        "neighbors": {
+          "ms": 2.300000011920929,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 3.900000035762787,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "unique",
+      "n": 50,
+      "trial": 0,
+      "pass": "warm",
+      "ready": 38.40000003576279,
+      "painted": 49.200000047683716,
+      "parts": 204,
+      "glyphs": "50",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 0.20000004768371582,
+          "calls": 50
+        },
+        "neighbors": {
+          "ms": 1.800000011920929,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 2.699999988079071,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "unique",
+      "n": 50,
+      "trial": 1,
+      "pass": "cold",
+      "ready": 88,
+      "painted": 89.70000004768372,
+      "parts": 204,
+      "glyphs": "50",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 205
+        },
+        "layout": {
+          "ms": 5.799999952316284,
+          "calls": 1
+        },
+        "read": {
+          "ms": 9.400000214576721,
+          "calls": 50
+        },
+        "connected": {
+          "ms": 4.499999761581421,
+          "calls": 50
+        },
+        "cells": {
+          "ms": 2.5,
+          "calls": 50
+        },
+        "pieces": {
+          "ms": 16.300000071525574,
+          "calls": 204
+        },
+        "splitGlyph": {
+          "ms": 34.90000003576279,
+          "calls": 50
+        },
+        "neighbors": {
+          "ms": 2.300000011920929,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 2.800000011920929,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "unique",
+      "n": 50,
+      "trial": 1,
+      "pass": "warm",
+      "ready": 37,
+      "painted": 47.69999998807907,
+      "parts": 204,
+      "glyphs": "50",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.30000001192092896,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 0.20000004768371582,
+          "calls": 50
+        },
+        "neighbors": {
+          "ms": 1.899999976158142,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 2.300000011920929,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "unique",
+      "n": 50,
+      "trial": 2,
+      "pass": "cold",
+      "ready": 89.80000001192093,
+      "painted": 102.5,
+      "parts": 204,
+      "glyphs": "50",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 205
+        },
+        "layout": {
+          "ms": 6.399999976158142,
+          "calls": 1
+        },
+        "read": {
+          "ms": 10.000000298023224,
+          "calls": 50
+        },
+        "connected": {
+          "ms": 4.2999995946884155,
+          "calls": 50
+        },
+        "cells": {
+          "ms": 2.800000011920929,
+          "calls": 50
+        },
+        "pieces": {
+          "ms": 18.30000001192093,
+          "calls": 204
+        },
+        "splitGlyph": {
+          "ms": 38.60000002384186,
+          "calls": 50
+        },
+        "neighbors": {
+          "ms": 2.599999964237213,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 3.100000023841858,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "unique",
+      "n": 50,
+      "trial": 2,
+      "pass": "warm",
+      "ready": 36.69999998807907,
+      "painted": 47.60000002384186,
+      "parts": 204,
+      "glyphs": "50",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.3999999761581421,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 0.09999996423721313,
+          "calls": 50
+        },
+        "neighbors": {
+          "ms": 2,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 2.5,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "unique",
+      "n": 200,
+      "trial": 0,
+      "pass": "cold",
+      "ready": 268.5999999642372,
+      "painted": 273.5,
+      "parts": 879,
+      "glyphs": "200",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 880
+        },
+        "layout": {
+          "ms": 25.80000001192093,
+          "calls": 1
+        },
+        "read": {
+          "ms": 44.900000631809235,
+          "calls": 200
+        },
+        "connected": {
+          "ms": 12.400000154972076,
+          "calls": 200
+        },
+        "cells": {
+          "ms": 5.300000011920929,
+          "calls": 200
+        },
+        "pieces": {
+          "ms": 73.59999966621399,
+          "calls": 879
+        },
+        "splitGlyph": {
+          "ms": 144.60000014305115,
+          "calls": 200
+        },
+        "neighbors": {
+          "ms": 20.69999998807907,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 11,
+          "calls": 1
+        }
+      },
+      "longest": 55
+    },
+    {
+      "kind": "unique",
+      "n": 200,
+      "trial": 0,
+      "pass": "warm",
+      "ready": 108.39999997615814,
+      "painted": 113,
+      "parts": 879,
+      "glyphs": "200",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.6000000238418579,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 0.7999999523162842,
+          "calls": 200
+        },
+        "neighbors": {
+          "ms": 18.400000035762787,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 8.400000035762787,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "unique",
+      "n": 200,
+      "trial": 1,
+      "pass": "cold",
+      "ready": 270.9000000357628,
+      "painted": 275.10000002384186,
+      "parts": 879,
+      "glyphs": "200",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 880
+        },
+        "layout": {
+          "ms": 23.80000001192093,
+          "calls": 1
+        },
+        "read": {
+          "ms": 42.90000021457672,
+          "calls": 200
+        },
+        "connected": {
+          "ms": 11.00000011920929,
+          "calls": 200
+        },
+        "cells": {
+          "ms": 7.899999976158142,
+          "calls": 200
+        },
+        "pieces": {
+          "ms": 72.19999951124191,
+          "calls": 879
+        },
+        "splitGlyph": {
+          "ms": 142.60000002384186,
+          "calls": 200
+        },
+        "neighbors": {
+          "ms": 19.100000023841858,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 10.400000035762787,
+          "calls": 1
+        }
+      },
+      "longest": 59
+    },
+    {
+      "kind": "unique",
+      "n": 200,
+      "trial": 1,
+      "pass": "warm",
+      "ready": 107.60000002384186,
+      "painted": 111.80000001192093,
+      "parts": 879,
+      "glyphs": "200",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.7999999523162842,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 0.6999998688697815,
+          "calls": 200
+        },
+        "neighbors": {
+          "ms": 20.600000023841858,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 10.5,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "unique",
+      "n": 200,
+      "trial": 2,
+      "pass": "cold",
+      "ready": 292.60000002384186,
+      "painted": 297.2000000476837,
+      "parts": 879,
+      "glyphs": "200",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 880
+        },
+        "layout": {
+          "ms": 24.69999998807907,
+          "calls": 1
+        },
+        "read": {
+          "ms": 46.19999986886978,
+          "calls": 200
+        },
+        "connected": {
+          "ms": 12.100000143051147,
+          "calls": 200
+        },
+        "cells": {
+          "ms": 8.000000059604645,
+          "calls": 200
+        },
+        "pieces": {
+          "ms": 76.8000003695488,
+          "calls": 879
+        },
+        "splitGlyph": {
+          "ms": 152.40000009536743,
+          "calls": 200
+        },
+        "neighbors": {
+          "ms": 26.80000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 10.199999988079071,
+          "calls": 1
+        }
+      },
+      "longest": 66
+    },
+    {
+      "kind": "unique",
+      "n": 200,
+      "trial": 2,
+      "pass": "warm",
+      "ready": 105.39999997615814,
+      "painted": 109.39999997615814,
+      "parts": 879,
+      "glyphs": "200",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.699999988079071,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 0.699999988079071,
+          "calls": 200
+        },
+        "neighbors": {
+          "ms": 18.899999976158142,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 8.799999952316284,
+          "calls": 1
+        }
+      },
+      "longest": 0
+    },
+    {
+      "kind": "unique",
+      "n": 500,
+      "trial": 0,
+      "pass": "cold",
+      "ready": 763.2000000476837,
+      "painted": 773.8000000119209,
+      "parts": 2322,
+      "glyphs": "500",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 2323
+        },
+        "layout": {
+          "ms": 63.60000002384186,
+          "calls": 1
+        },
+        "read": {
+          "ms": 114.59999907016754,
+          "calls": 500
+        },
+        "connected": {
+          "ms": 26.300000071525574,
+          "calls": 500
+        },
+        "cells": {
+          "ms": 16.900000035762787,
+          "calls": 500
+        },
+        "pieces": {
+          "ms": 192.50000023841858,
+          "calls": 2322
+        },
+        "splitGlyph": {
+          "ms": 368.59999960660934,
+          "calls": 500
+        },
+        "neighbors": {
+          "ms": 79,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 27.100000023841858,
+          "calls": 1
+        }
+      },
+      "longest": 129
+    },
+    {
+      "kind": "unique",
+      "n": 500,
+      "trial": 0,
+      "pass": "warm",
+      "ready": 531.5,
+      "painted": 553.3999999761581,
+      "parts": 2322,
+      "glyphs": "500",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 1.5,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.5000000596046448,
+          "calls": 500
+        },
+        "neighbors": {
+          "ms": 80.59999996423721,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 25.900000035762787,
+          "calls": 1
+        }
+      },
+      "longest": 112
+    },
+    {
+      "kind": "unique",
+      "n": 500,
+      "trial": 1,
+      "pass": "cold",
+      "ready": 763,
+      "painted": 773.8000000119209,
+      "parts": 2322,
+      "glyphs": "500",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 2323
+        },
+        "layout": {
+          "ms": 61.09999996423721,
+          "calls": 1
+        },
+        "read": {
+          "ms": 112.7999986410141,
+          "calls": 500
+        },
+        "connected": {
+          "ms": 24.800000369548798,
+          "calls": 500
+        },
+        "cells": {
+          "ms": 17.40000057220459,
+          "calls": 500
+        },
+        "pieces": {
+          "ms": 186.90000027418137,
+          "calls": 2322
+        },
+        "splitGlyph": {
+          "ms": 362.1000000834465,
+          "calls": 500
+        },
+        "neighbors": {
+          "ms": 79.70000004768372,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 28.900000035762787,
+          "calls": 1
+        }
+      },
+      "longest": 133
+    },
+    {
+      "kind": "unique",
+      "n": 500,
+      "trial": 1,
+      "pass": "warm",
+      "ready": 513,
+      "painted": 546.8999999761581,
+      "parts": 2322,
+      "glyphs": "500",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 1.5,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 2.0000000596046448,
+          "calls": 500
+        },
+        "neighbors": {
+          "ms": 79.60000002384186,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 26.19999998807907,
+          "calls": 1
+        }
+      },
+      "longest": 111
+    },
+    {
+      "kind": "unique",
+      "n": 500,
+      "trial": 2,
+      "pass": "cold",
+      "ready": 694.1000000238419,
+      "painted": 704.8000000119209,
+      "parts": 2322,
+      "glyphs": "500",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 2323
+        },
+        "layout": {
+          "ms": 59.60000002384186,
+          "calls": 1
+        },
+        "read": {
+          "ms": 112.49999988079071,
+          "calls": 500
+        },
+        "connected": {
+          "ms": 24.50000011920929,
+          "calls": 500
+        },
+        "cells": {
+          "ms": 15.199999690055847,
+          "calls": 500
+        },
+        "pieces": {
+          "ms": 185.9000005722046,
+          "calls": 2322
+        },
+        "splitGlyph": {
+          "ms": 355,
+          "calls": 500
+        },
+        "neighbors": {
+          "ms": 80.79999995231628,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 26.5,
+          "calls": 1
+        }
+      },
+      "longest": 131
+    },
+    {
+      "kind": "unique",
+      "n": 500,
+      "trial": 2,
+      "pass": "warm",
+      "ready": 531.1000000238419,
+      "painted": 556.6000000238419,
+      "parts": 2322,
+      "glyphs": "500",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 1.399999976158142,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.8000001311302185,
+          "calls": 500
+        },
+        "neighbors": {
+          "ms": 89.10000002384186,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 23,
+          "calls": 1
+        }
+      },
+      "longest": 118
+    },
+    {
+      "kind": "unique",
+      "n": 1000,
+      "trial": 0,
+      "pass": "cold",
+      "ready": 1578.300000011921,
+      "painted": 1602.699999988079,
+      "parts": 4877,
+      "glyphs": "1,000",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 135.60000002384186,
+          "calls": 1
+        },
+        "read": {
+          "ms": 253.8000007867813,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 46.899999260902405,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 37.69999969005585,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 416.80000001192093,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 791.7000002264977,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 205.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 50.89999997615814,
+          "calls": 1
+        }
+      },
+      "longest": 307
+    },
+    {
+      "kind": "unique",
+      "n": 1000,
+      "trial": 0,
+      "pass": "warm",
+      "ready": 1008.8000000119209,
+      "painted": 1049.800000011921,
+      "parts": 4877,
+      "glyphs": "1,000",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 6.199999988079071,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 5.800000011920929,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 211.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 55.10000002384186,
+          "calls": 1
+        }
+      },
+      "longest": 282
+    },
+    {
+      "kind": "unique",
+      "n": 1000,
+      "trial": 1,
+      "pass": "cold",
+      "ready": 1576.8999999761581,
+      "painted": 1599.5,
+      "parts": 4877,
+      "glyphs": "1,000",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 139.39999997615814,
+          "calls": 1
+        },
+        "read": {
+          "ms": 260.49999994039536,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 47.199999928474426,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 35.900000512599945,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 421.3000004887581,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 801.4999996423721,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 203,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 63.69999998807907,
+          "calls": 1
+        }
+      },
+      "longest": 320
+    },
+    {
+      "kind": "unique",
+      "n": 1000,
+      "trial": 1,
+      "pass": "warm",
+      "ready": 1003.2999999523163,
+      "painted": 1026,
+      "parts": 4877,
+      "glyphs": "1,000",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 4.699999988079071,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 6.300000071525574,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 216.9000000357628,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 86,
+          "calls": 1
+        }
+      },
+      "longest": 321
+    },
+    {
+      "kind": "unique",
+      "n": 1000,
+      "trial": 2,
+      "pass": "cold",
+      "ready": 1704.800000011921,
+      "painted": 1726.199999988079,
+      "parts": 4877,
+      "glyphs": "1,000",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 146.69999998807907,
+          "calls": 1
+        },
+        "read": {
+          "ms": 255.09999990463257,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 45.99999988079071,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 38.50000023841858,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 403.3999996185303,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 777.3999998569489,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 203.80000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 54.40000003576279,
+          "calls": 1
+        }
+      },
+      "longest": 306
+    },
+    {
+      "kind": "unique",
+      "n": 1000,
+      "trial": 2,
+      "pass": "warm",
+      "ready": 984.5,
+      "painted": 1004.7999999523163,
+      "parts": 4877,
+      "glyphs": "1,000",
+      "totals": {
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 4.899999976158142,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 6.500000238418579,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 213.60000002384186,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 60.80000001192093,
+          "calls": 1
+        }
+      },
+      "longest": 293
+    }
+  ]
+}

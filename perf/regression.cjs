@@ -1,0 +1,27 @@
+const {chromium}=require(process.env.PLAYWRIGHT_PATH||'C:/Users/ThinkPad/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const fs=require('node:fs');const assert=require('node:assert/strict');const {instrument}=require('./benchmark.cjs');
+(async()=>{
+ const browser=await chromium.launch({executablePath:process.env.BROWSER_PATH||'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});
+ const page=await browser.newPage({viewport:{width:390,height:844},deviceScaleFactor:2});
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.addInitScript(()=>Object.defineProperty(window,'scheduler',{value:undefined}));
+ await page.route('**/app.js*',r=>r.fulfill({contentType:'text/javascript',body:instrument(fs.readFileSync('zijian-github/app.js','utf8'))}));
+ await page.goto('http://127.0.0.1:4173/zijian-github/');
+ await page.evaluate(async()=>{document.querySelector('#text-input').value='汉'.repeat(100);await bench.compose()});
+ const first=await page.locator('#stage').evaluate(c=>c.toDataURL());
+ await page.evaluate(async()=>{document.querySelector('#text-color').value='#ff0000';bench.recolorParticles();await bench.compose();document.querySelector('#text-color').value='#25231f';bench.recolorParticles()});
+ assert.equal(await page.locator('#stage').evaluate(c=>c.toDataURL()),first);
+ await page.locator('#clear-text').click();await page.locator('#compose-button').click();assert.equal(await page.locator('#canvas-state').innerText(),'请输入文字');
+ await page.locator('#text-input').fill('清空后重新生成');await page.locator('#compose-button').click();await page.waitForFunction(()=>!bench.state.generating);
+ assert.equal(await page.locator('#stat-glyphs').innerText(),'7');
+ await page.evaluate(()=>{bench.controls['layout-width'].value=1000;bench.controls['layout-height'].value=900;bench.controls['font-size'].value=18;bench.controls['line-height'].value=1;bench.controls['letter-spacing'].value=0;document.querySelector('#text-input').value=Array.from({length:1100},(_,i)=>String.fromCharCode(0x4e00+i)).join('')});
+ await page.evaluate(()=>bench.compose());
+ assert.equal(await page.locator('#stat-glyphs').innerText(),'1,100');
+ await page.locator('#font-family').selectOption('sans');
+ await page.evaluate(()=>{window.pending=bench.compose()});
+ await page.locator('#font-family').selectOption('kai');await page.evaluate(()=>window.pending);
+ assert.equal(await page.evaluate(()=>bench.state.renderedFont),'default');
+ assert.ok(await page.locator('#compose-button').isEnabled());
+ assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert.deepEqual(errors,[]);
+ await browser.close();console.log('PASS: scheduler fallback, cached recolor roundtrip, clear/regenerate, 1100 unique glyphs/cache eviction, stale generation, DPR 2 mobile layout');
+})().catch(e=>{console.error(e);process.exit(1)});

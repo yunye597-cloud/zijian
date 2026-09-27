@@ -1,0 +1,5945 @@
+{
+  "browser": "154.0.4258.37",
+  "rows": [
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 0,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 245.9000000357628,
+      "painted": 262,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 109.10000002384186,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 3.299999952316284,
+          "calls": 1
+        },
+        "read": {
+          "ms": 3.0000000596046448,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 3.199999988079071,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 1.0000000596046448,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 4.899999976158142,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 17,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 84.39999997615814,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.3999999761581421,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 24.5,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 18.599999964237213,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 0,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 398.80000001192093,
+      "painted": 536.6999999880791,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 317.60000002384186,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.5999999642372131,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.9000000357627869,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 62.60000002384186,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 30.80000001192093,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 14.900000035762787,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 0,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 41.60000002384186,
+      "painted": 216.69999998807907,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 19.399999976158142,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 15
+        },
+        "layout": {
+          "ms": 0.6000000238418579,
+          "calls": 1
+        },
+        "read": {
+          "ms": 0.10000002384185791,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 0.6000000834465027,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 1.399999976158142,
+          "calls": 14
+        },
+        "splitGlyph": {
+          "ms": 3.5000000596046448,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 14.100000023841858,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 6.5,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 2.800000011920929,
+          "calls": 1
+        }
+      },
+      "parts": 1750
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 0,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 335.10000002384186,
+      "painted": 370.5,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 47.40000003576279,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 76
+        },
+        "layout": {
+          "ms": 0.5999999642372131,
+          "calls": 1
+        },
+        "read": {
+          "ms": 0.3999999165534973,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 0.3999999761581421,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 0.6000001430511475,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 5.800000011920929,
+          "calls": 75
+        },
+        "splitGlyph": {
+          "ms": 8.800000011920929,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 254.5999999642372,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 48.69999998807907,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 22.899999976158142,
+          "calls": 1
+        }
+      },
+      "parts": 9375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 0,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 157.30000001192093,
+      "painted": 171.5,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 65.79999995231628,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.800000011920929,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 2.200000047683716,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 74.90000003576279,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 21.999999940395355,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 12.099999964237213,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 0,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 299.5999999642372,
+      "painted": 316.69999998807907,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "resize": {
+          "ms": 19.300000071525574,
+          "calls": 2
+        },
+        "waitForPaint": {
+          "ms": 202.60000002384186,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 3.199999988079071,
+          "calls": 1
+        },
+        "read": {
+          "ms": 2.1999999284744263,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 2.8000001311302185,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 0.8000000715255737,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 3.8999999165534973,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 15.699999928474426,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 46.39999997615814,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.30000001192092896,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 26,
+          "calls": 2
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 0,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 406.0999999642372,
+      "painted": 591.6999999880791,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 351.80000001192093,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.699999988079071,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.5000000596046448,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 37.60000002384186,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 23.69999998807907,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 13,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 0,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 433.10000002384186,
+      "painted": 641.2000000476837,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 418.69999998807907,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 15
+        },
+        "layout": {
+          "ms": 0.5999999642372131,
+          "calls": 1
+        },
+        "pieces": {
+          "ms": 1.2999999523162842,
+          "calls": 14
+        },
+        "splitGlyph": {
+          "ms": 2.1999999284744263,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 7.300000011920929,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 4.999999940395355,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 2.899999976158142,
+          "calls": 1
+        }
+      },
+      "parts": 1750
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 0,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 204.89999997615814,
+      "painted": 235.39999997615814,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 51.200000047683716,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 76
+        },
+        "layout": {
+          "ms": 0.5999999642372131,
+          "calls": 1
+        },
+        "cells": {
+          "ms": 0.7000001072883606,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 5.299999892711639,
+          "calls": 75
+        },
+        "splitGlyph": {
+          "ms": 7.899999976158142,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 121,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 44.799999952316284,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 22.899999976158142,
+          "calls": 1
+        }
+      },
+      "parts": 9375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 0,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 124.29999995231628,
+      "painted": 151.0999999642372,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 75.09999996423721,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.800000011920929,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.600000023841858,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 33.39999997615814,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 22.899999976158142,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 12.199999988079071,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 1,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 120.39999997615814,
+      "painted": 136.80000001192093,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 25,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 2.800000011920929,
+          "calls": 1
+        },
+        "read": {
+          "ms": 1.8000000715255737,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 2.299999952316284,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 0.7000000476837158,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 3.8999999165534973,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 14.5,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 46.59999996423721,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 25.099999964237213,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 19.19999998807907,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 1,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 417.0999999642372,
+      "painted": 599.6999999880791,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 355.30000001192093,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.5999999642372131,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.5,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 47.39999997615814,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 22.899999976158142,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 11.399999976158142,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 1,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 432.19999998807907,
+      "painted": 655.6999999880791,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 415.69999998807907,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 15
+        },
+        "layout": {
+          "ms": 1,
+          "calls": 1
+        },
+        "pieces": {
+          "ms": 1.5999999642372131,
+          "calls": 14
+        },
+        "splitGlyph": {
+          "ms": 2.700000047683716,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 9.300000011920929,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 4.899999976158142,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 2.800000011920929,
+          "calls": 1
+        }
+      },
+      "parts": 1750
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 1,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 260.0999999642372,
+      "painted": 291.39999997615814,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 104.5,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 76
+        },
+        "layout": {
+          "ms": 0.3999999761581421,
+          "calls": 1
+        },
+        "cells": {
+          "ms": 0.5999999046325684,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 6.400000035762787,
+          "calls": 75
+        },
+        "splitGlyph": {
+          "ms": 8.299999952316284,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 122.29999995231628,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 45.90000003576279,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 23.69999998807907,
+          "calls": 1
+        }
+      },
+      "parts": 9375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 1,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 127.69999998807907,
+      "painted": 157.60000002384186,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 71.80000001192093,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 1,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 2.099999964237213,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 37.80000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 25.100000023841858,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 14.199999988079071,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 1,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 144,
+      "painted": 159.9000000357628,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 18.599999964237213,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 2.900000035762787,
+          "calls": 1
+        },
+        "read": {
+          "ms": 2,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 1.899999976158142,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 0.7000000476837158,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 3.5999999046325684,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 12.099999964237213,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 76.09999996423721,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.30000001192092896,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 25.899999976158142,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 20.899999976158142,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 1,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 441.19999998807907,
+      "painted": 605.3999999761581,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 355.5,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.699999988079071,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.0999999642372131,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 71,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 26.19999998807907,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 11.900000035762787,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 1,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 448.4000000357628,
+      "painted": 660,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 423.10000002384186,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 15
+        },
+        "layout": {
+          "ms": 1.0999999642372131,
+          "calls": 1
+        },
+        "read": {
+          "ms": 0.30000001192092896,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 0.7000000476837158,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 1.3999999165534973,
+          "calls": 14
+        },
+        "splitGlyph": {
+          "ms": 4.200000047683716,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 16.30000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 6.5,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 2.899999976158142,
+          "calls": 1
+        }
+      },
+      "parts": 1750
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 1,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 395.39999997615814,
+      "painted": 428.30000001192093,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 103.90000003576279,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 76
+        },
+        "layout": {
+          "ms": 0.5999999642372131,
+          "calls": 1
+        },
+        "read": {
+          "ms": 0.2999999523162842,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 0.30000007152557373,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 0.4999999403953552,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 5.899999976158142,
+          "calls": 75
+        },
+        "splitGlyph": {
+          "ms": 8.599999964237213,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 255.39999997615814,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 48.80000001192093,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 25.69999998807907,
+          "calls": 1
+        }
+      },
+      "parts": 9375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 1,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 149,
+      "painted": 163.0999999642372,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 70,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.6000000238418579,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.800000011920929,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 63.80000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 21.700000047683716,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 12,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 2,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 344,
+      "painted": 359.7000000476837,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "resize": {
+          "ms": 18.499999940395355,
+          "calls": 2
+        },
+        "waitForPaint": {
+          "ms": 219.4000000357628,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 2.599999964237213,
+          "calls": 1
+        },
+        "read": {
+          "ms": 2.399999976158142,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 2.099999964237213,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 0.9000000357627869,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 3.799999952316284,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 15.399999916553497,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 73.30000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.30000001192092896,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 24.30000001192093,
+          "calls": 2
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 2,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 440.10000002384186,
+      "painted": 595.3999999761581,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 350.9000000357628,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 1.100000023841858,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.5999999642372131,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 73.19999998807907,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.20000004768371582,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 23.30000001192093,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 11.300000011920929,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 2,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 43.19999998807907,
+      "painted": 442.69999998807907,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 16.69999998807907,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 15
+        },
+        "layout": {
+          "ms": 0.6000000238418579,
+          "calls": 1
+        },
+        "read": {
+          "ms": 0.5,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 0.40000003576278687,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 1.9000000357627869,
+          "calls": 14
+        },
+        "splitGlyph": {
+          "ms": 5.399999976158142,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 16.69999998807907,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 6.400000035762787,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 2.900000035762787,
+          "calls": 1
+        }
+      },
+      "parts": 1750
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 2,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 320.80000001192093,
+      "painted": 350.89999997615814,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 48.59999996423721,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 76
+        },
+        "layout": {
+          "ms": 0.40000003576278687,
+          "calls": 1
+        },
+        "read": {
+          "ms": 0.6000000238418579,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 0.30000001192092896,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 0.3999999761581421,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 6.200000047683716,
+          "calls": 75
+        },
+        "splitGlyph": {
+          "ms": 9.000000059604645,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 238.60000002384186,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 44.30000001192093,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 23.099999964237213,
+          "calls": 1
+        }
+      },
+      "parts": 9375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 2,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 179,
+      "painted": 192.69999998807907,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 92.69999998807907,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.800000011920929,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.399999976158142,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 69.39999997615814,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 23,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 13.300000011920929,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 2,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 316.69999998807907,
+      "painted": 334.30000001192093,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "resize": {
+          "ms": 20.099999964237213,
+          "calls": 2
+        },
+        "waitForPaint": {
+          "ms": 217.60000002384186,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 2.5,
+          "calls": 1
+        },
+        "read": {
+          "ms": 1.8000000715255737,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 2.2000001072883606,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 0.5,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 4.399999976158142,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 13.899999916553497,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 48.80000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 25.899999976158142,
+          "calls": 2
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 2,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 426.9000000357628,
+      "painted": 613.6000000238419,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 370.10000002384186,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.699999988079071,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.5999999642372131,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 40.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 24.200000047683716,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 13.200000047683716,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 2,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 33.39999997615814,
+      "painted": 433.80000001192093,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 18.200000047683716,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 15
+        },
+        "layout": {
+          "ms": 1.0999999642372131,
+          "calls": 1
+        },
+        "pieces": {
+          "ms": 1.699999988079071,
+          "calls": 14
+        },
+        "splitGlyph": {
+          "ms": 3.199999988079071,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 7.399999976158142,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 4.800000011920929,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 2.899999976158142,
+          "calls": 1
+        }
+      },
+      "parts": 1750
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 2,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 252.80000001192093,
+      "painted": 283.10000002384186,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 100.69999998807907,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 76
+        },
+        "layout": {
+          "ms": 0.5999999642372131,
+          "calls": 1
+        },
+        "cells": {
+          "ms": 0.7999999523162842,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 5.200000107288361,
+          "calls": 75
+        },
+        "splitGlyph": {
+          "ms": 7.5,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 117.80000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 46.200000047683716,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 24.80000001192093,
+          "calls": 1
+        }
+      },
+      "parts": 9375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 2,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 144.19999998807907,
+      "painted": 172.69999998807907,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 92.89999997615814,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 1.100000023841858,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 2,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 34.700000047683716,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 24.80000001192093,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 12.800000011920929,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 3,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 123.5,
+      "painted": 140.5999999642372,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 24,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 2.600000023841858,
+          "calls": 1
+        },
+        "read": {
+          "ms": 1.8999999165534973,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 1.899999976158142,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 1,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 3.400000035762787,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 13.699999928474426,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 51.200000047683716,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.30000001192092896,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 24.80000001192093,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 19.30000001192093,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 3,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 442.10000002384186,
+      "painted": 619.5,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 359.5,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.699999988079071,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 2.3000000715255737,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 65.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 25.30000001192093,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 13.199999988079071,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 3,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 443.10000002384186,
+      "painted": 661.6999999880791,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 425.9000000357628,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 15
+        },
+        "layout": {
+          "ms": 0.699999988079071,
+          "calls": 1
+        },
+        "pieces": {
+          "ms": 1.5999999642372131,
+          "calls": 14
+        },
+        "splitGlyph": {
+          "ms": 3.099999964237213,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 9.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 5.199999988079071,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 3,
+          "calls": 1
+        }
+      },
+      "parts": 1750
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 3,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 265.60000002384186,
+      "painted": 303.7000000476837,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 105,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 76
+        },
+        "layout": {
+          "ms": 0.5,
+          "calls": 1
+        },
+        "cells": {
+          "ms": 0.7000000476837158,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 5.599999964237213,
+          "calls": 75
+        },
+        "splitGlyph": {
+          "ms": 8.099999964237213,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 128.30000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 51.19999998807907,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 22.899999976158142,
+          "calls": 1
+        }
+      },
+      "parts": 9375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 3,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 120.19999998807907,
+      "painted": 155.60000002384186,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 59.59999996423721,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.9000000357627869,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 2.199999988079071,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 38.39999997615814,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 37.09999996423721,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 18.399999976158142,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 3,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 144.5,
+      "painted": 161.39999997615814,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 16.299999952316284,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 2.900000035762787,
+          "calls": 1
+        },
+        "read": {
+          "ms": 2.099999964237213,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 2.0000000596046448,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 0.8999998569488525,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 3.700000047683716,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 13.099999904632568,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 78.60000002384186,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.30000001192092896,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 26.099999964237213,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 20.19999998807907,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 3,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 431.30000001192093,
+      "painted": 594,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 346.30000001192093,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.800000011920929,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 69.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 24.69999998807907,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 12.5,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 3,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 443.5,
+      "painted": 645.5999999642372,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 417.80000001192093,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 15
+        },
+        "layout": {
+          "ms": 0.699999988079071,
+          "calls": 1
+        },
+        "read": {
+          "ms": 0.6000000238418579,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 0.19999998807907104,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 1.699999988079071,
+          "calls": 14
+        },
+        "splitGlyph": {
+          "ms": 4,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 17.099999964237213,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 5.400000035762787,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 3.200000047683716,
+          "calls": 1
+        }
+      },
+      "parts": 1750
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 3,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 326.69999998807907,
+      "painted": 358,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 48.5,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 76
+        },
+        "layout": {
+          "ms": 0.800000011920929,
+          "calls": 1
+        },
+        "read": {
+          "ms": 0.19999998807907104,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 0.3999999761581421,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 0.30000007152557373,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 5.9999998807907104,
+          "calls": 75
+        },
+        "splitGlyph": {
+          "ms": 8.600000023841858,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 244.20000004768372,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 45.5,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 23.30000001192093,
+          "calls": 1
+        }
+      },
+      "parts": 9375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 3,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 153.4000000357628,
+      "painted": 167.80000001192093,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 64.80000001192093,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.699999988079071,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 2.900000035762787,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 72.19999998807907,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 22,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 11.900000035762787,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 4,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 338.39999997615814,
+      "painted": 354.2999999523163,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "resize": {
+          "ms": 19.099999964237213,
+          "calls": 2
+        },
+        "waitForPaint": {
+          "ms": 214.5,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 3.300000011920929,
+          "calls": 1
+        },
+        "read": {
+          "ms": 2.5,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 2.0000000596046448,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 0.8999999761581421,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 4.200000107288361,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 13.999999940395355,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 72.60000002384186,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.40000003576278687,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 24.599999964237213,
+          "calls": 2
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 4,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 436,
+      "painted": 592.2999999523163,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 349.9000000357628,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 1,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.199999988079071,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 71.59999996423721,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 23,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 11.399999976158142,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 4,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 435.4000000357628,
+      "painted": 646,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 413,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 15
+        },
+        "layout": {
+          "ms": 0.6000000238418579,
+          "calls": 1
+        },
+        "read": {
+          "ms": 0.5000000596046448,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 0.6000000238418579,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 1.3999998569488525,
+          "calls": 14
+        },
+        "splitGlyph": {
+          "ms": 3.799999952316284,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 14.400000035762787,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 6,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 2.900000035762787,
+          "calls": 1
+        }
+      },
+      "parts": 1750
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 4,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 388.19999998807907,
+      "painted": 419.9000000357628,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 103.30000001192093,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 76
+        },
+        "layout": {
+          "ms": 0.5999999642372131,
+          "calls": 1
+        },
+        "read": {
+          "ms": 0.699999988079071,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 0.2999999523162842,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 0.40000003576278687,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 6.200000107288361,
+          "calls": 75
+        },
+        "splitGlyph": {
+          "ms": 9.100000083446503,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 251.80000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 44.59999996423721,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 22.5,
+          "calls": 1
+        }
+      },
+      "parts": 9375
+    },
+    {
+      "variant": "before",
+      "kind": "repeat",
+      "trial": 4,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 166,
+      "painted": 180.0999999642372,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 74.5,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 1.300000011920929,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 2.5,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 73.69999998807907,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 22.80000001192093,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 12.599999964237213,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 4,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 131.5999999642372,
+      "painted": 149,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 28.80000001192093,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 36
+        },
+        "layout": {
+          "ms": 2.899999976158142,
+          "calls": 1
+        },
+        "read": {
+          "ms": 1.9000000953674316,
+          "calls": 8
+        },
+        "connected": {
+          "ms": 1.899999976158142,
+          "calls": 8
+        },
+        "cells": {
+          "ms": 1.0000001192092896,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 3.4999998211860657,
+          "calls": 35
+        },
+        "splitGlyph": {
+          "ms": 15.5,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 51.60000002384186,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.30000001192092896,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 26.100000023841858,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 19.69999998807907,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 4,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 449.5,
+      "painted": 650.5,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 376.60000002384186,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.8999999761581421,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 2.299999952316284,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 54.60000002384186,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 24.899999976158142,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 13.399999976158142,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 4,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 441.10000002384186,
+      "painted": 654.3000000119209,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 422.10000002384186,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 15
+        },
+        "layout": {
+          "ms": 0.699999988079071,
+          "calls": 1
+        },
+        "pieces": {
+          "ms": 1.5999999642372131,
+          "calls": 14
+        },
+        "splitGlyph": {
+          "ms": 2.5999999046325684,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 9.700000047683716,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 7.300000071525574,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 5.100000023841858,
+          "calls": 1
+        }
+      },
+      "parts": 1750
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 4,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 272.69999998807907,
+      "painted": 304.0999999642372,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 103.30000001192093,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 76
+        },
+        "layout": {
+          "ms": 0.699999988079071,
+          "calls": 1
+        },
+        "cells": {
+          "ms": 0.5999999642372131,
+          "calls": 8
+        },
+        "pieces": {
+          "ms": 6.800000071525574,
+          "calls": 75
+        },
+        "splitGlyph": {
+          "ms": 8.700000047683716,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 134.19999998807907,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 45.69999998807907,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 23.599999964237213,
+          "calls": 1
+        }
+      },
+      "parts": 9375
+    },
+    {
+      "variant": "final",
+      "kind": "repeat",
+      "trial": 4,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 139,
+      "painted": 161,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 72.5,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 0.6000000238418579,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.7999999523162842,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 42.39999997615814,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 31.30000001192093,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 20.5,
+          "calls": 1
+        }
+      },
+      "parts": 4375
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 0,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 1064.300000011921,
+      "painted": 1090.800000011921,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 4.399999976158142,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 129.5,
+          "calls": 1
+        },
+        "read": {
+          "ms": 246.19999998807907,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 51.1000000834465,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 40.700000286102295,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 405.4999997019768,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 777.0999999046326,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 91.30000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.7000000476837158,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 37.39999997615814,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 31,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 0,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 372.10000002384186,
+      "painted": 405.7000000476837,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 254.10000002384186,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 2.799999952316284,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.899999976158142,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 93.10000002384186,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.5,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 35.30000001192093,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 18.899999976158142,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 0,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 775.1999999880791,
+      "painted": 799.2999999523163,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 182.5999999642372,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 2196
+        },
+        "layout": {
+          "ms": 2.800000011920929,
+          "calls": 1
+        },
+        "read": {
+          "ms": 222.50000095367432,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 47.799999833106995,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 236.09999948740005,
+          "calls": 2195
+        },
+        "splitGlyph": {
+          "ms": 540.1999998688698,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 23.19999998807907,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.30000001192092896,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 10.800000011920929,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 8,
+          "calls": 1
+        }
+      },
+      "parts": 2195
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 0,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 2337.5,
+      "painted": 2402.800000011921,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 244.30000001192093,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 10013
+        },
+        "layout": {
+          "ms": 3.099999964237213,
+          "calls": 1
+        },
+        "read": {
+          "ms": 69.19999986886978,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 51.19999969005585,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 44.90000033378601,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 1422.3000003695488,
+          "calls": 10012
+        },
+        "splitGlyph": {
+          "ms": 1638.9999996423721,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 365,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 1.699999988079071,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 92.60000002384186,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 50.30000001192093,
+          "calls": 1
+        }
+      },
+      "parts": 10012
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 0,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 2180.600000023842,
+      "painted": 2210.100000023842,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 1080,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 2.699999988079071,
+          "calls": 1
+        },
+        "read": {
+          "ms": 66.80000108480453,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 51.300000071525574,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 34.699999272823334,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 767.2999998927116,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 960.6999998688698,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 90.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.5,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 42.5,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 26.700000047683716,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 0,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 1635.6000000238419,
+      "painted": 1660.699999988079,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "resize": {
+          "ms": 34.700000047683716,
+          "calls": 2
+        },
+        "waitForPaint": {
+          "ms": 526.5999999642372,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 144.10000002384186,
+          "calls": 1
+        },
+        "read": {
+          "ms": 255.90000009536743,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 58.60000032186508,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 37.60000056028366,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 425.09999907016754,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 827.0000001192093,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 65.30000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.9000000357627869,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 39.39999997615814,
+          "calls": 2
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 0,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 376.39999997615814,
+      "painted": 430.80000001192093,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 289.5999999642372,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 6.400000035762787,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 5.699999928474426,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 54.299999952316284,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.5999999642372131,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 33.19999998807907,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 18.399999976158142,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 0,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 417.2000000476837,
+      "painted": 432.80000001192093,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 182.69999998807907,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 2196
+        },
+        "layout": {
+          "ms": 2.300000011920929,
+          "calls": 1
+        },
+        "pieces": {
+          "ms": 198.10000026226044,
+          "calls": 2195
+        },
+        "splitGlyph": {
+          "ms": 205.50000017881393,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 13.399999976158142,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 10.200000047683716,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 7.600000023841858,
+          "calls": 1
+        }
+      },
+      "parts": 2195
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 0,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 2438.699999988079,
+      "painted": 2491.300000011921,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 598,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 10013
+        },
+        "layout": {
+          "ms": 2.400000035762787,
+          "calls": 1
+        },
+        "cells": {
+          "ms": 247.30000013113022,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 1315.0999996066093,
+          "calls": 10012
+        },
+        "splitGlyph": {
+          "ms": 1590.3000006079674,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 170.5999999642372,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 1,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 80.39999997615814,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 47.5,
+          "calls": 1
+        }
+      },
+      "parts": 10012
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 0,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 2218.400000035763,
+      "painted": 2247.600000023842,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 1386.7999999523163,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 3,
+          "calls": 1
+        },
+        "cells": {
+          "ms": 31.399999380111694,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 673.2000002264977,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 721.7999998927116,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 55.89999997615814,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.6000000238418579,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 57,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 34.30000001192093,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 1,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 1722.5,
+      "painted": 1747.699999988079,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "resize": {
+          "ms": 33.10000002384186,
+          "calls": 2
+        },
+        "waitForPaint": {
+          "ms": 626.3000000119209,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 144.39999997615814,
+          "calls": 1
+        },
+        "read": {
+          "ms": 251.5999999642372,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 54.90000021457672,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 40.499999821186066,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 418.9999994635582,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 808.3999997377396,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 77.39999997615814,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 1,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 38.80000001192093,
+          "calls": 2
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 1,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 374.39999997615814,
+      "painted": 431.0999999642372,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 293.80000001192093,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 3,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.4999999403953552,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 55.80000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.5,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 33.40000003576279,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 18.600000023841858,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 1,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 426.10000002384186,
+      "painted": 578.6999999880791,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 184.4000000357628,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 2196
+        },
+        "layout": {
+          "ms": 3.099999964237213,
+          "calls": 1
+        },
+        "pieces": {
+          "ms": 199.5999999642372,
+          "calls": 2195
+        },
+        "splitGlyph": {
+          "ms": 208.5,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 13.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 145.89999997615814,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 10.599999964237213,
+          "calls": 1
+        }
+      },
+      "parts": 2195
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 1,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 2322.699999988079,
+      "painted": 2372.099999964237,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 620.1000000238419,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 10013
+        },
+        "layout": {
+          "ms": 3.800000011920929,
+          "calls": 1
+        },
+        "cells": {
+          "ms": 63.099999487400055,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 1351.7000010609627,
+          "calls": 10012
+        },
+        "splitGlyph": {
+          "ms": 1436.9000005722046,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 182.39999997615814,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 1,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 80.89999997615814,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 49.299999952316284,
+          "calls": 1
+        }
+      },
+      "parts": 10012
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 1,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 1947.5,
+      "painted": 1971.800000011921,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 1126.300000011921,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 2.899999976158142,
+          "calls": 1
+        },
+        "cells": {
+          "ms": 35.20000022649765,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 667.8999998569489,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 718.0999998450279,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 52.69999998807907,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.5,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 47.90000003576279,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 30.099999964237213,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 1,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 1775.800000011921,
+      "painted": 1802.800000011921,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "resize": {
+          "ms": 35.39999997615814,
+          "calls": 2
+        },
+        "waitForPaint": {
+          "ms": 637,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 139.39999997615814,
+          "calls": 1
+        },
+        "read": {
+          "ms": 262.50000071525574,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 54.09999871253967,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 43.500000298023224,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 428.7000005245209,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 825.5,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 103.69999998807907,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.9000000357627869,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 41.09999996423721,
+          "calls": 2
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 1,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 387.5,
+      "painted": 417.19999998807907,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 272.4000000357628,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 3,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.4000000953674316,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 91,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.5999999642372131,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 33.999999940395355,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 17.80000001192093,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 1,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 831.8000000119209,
+      "painted": 859.5999999642372,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 187.60000002384186,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 2196
+        },
+        "layout": {
+          "ms": 2.699999988079071,
+          "calls": 1
+        },
+        "read": {
+          "ms": 237.59999924898148,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 56.50000047683716,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 256.1000006198883,
+          "calls": 2195
+        },
+        "splitGlyph": {
+          "ms": 582.7000002861023,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 31,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.30000001192092896,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 16.099999964237213,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 10.900000035762787,
+          "calls": 1
+        }
+      },
+      "parts": 2195
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 1,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 2445.400000035763,
+      "painted": 2501.7000000476837,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 229.89999997615814,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 10013
+        },
+        "layout": {
+          "ms": 3,
+          "calls": 1
+        },
+        "read": {
+          "ms": 80.80000120401382,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 58.099999368190765,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 51.59999853372574,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 1508.400000989437,
+          "calls": 10012
+        },
+        "splitGlyph": {
+          "ms": 1762.3000003099442,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 365.10000002384186,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 1,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 81.49999994039536,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 47.59999996423721,
+          "calls": 1
+        }
+      },
+      "parts": 10012
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 1,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 2253.399999976158,
+      "painted": 2283,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 1106,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 2.699999988079071,
+          "calls": 1
+        },
+        "read": {
+          "ms": 67.20000058412552,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 50.89999884366989,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 144.5000001192093,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 687.9000005126,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 990.6999995112419,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 105,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.6000000238418579,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 43.3999999165535,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 27.299999952316284,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 2,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 2216.300000011921,
+      "painted": 2243,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "resize": {
+          "ms": 34.000000059604645,
+          "calls": 2
+        },
+        "waitForPaint": {
+          "ms": 926.2000000476837,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 159.89999997615814,
+          "calls": 1
+        },
+        "read": {
+          "ms": 318.0999998450279,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 62.39999973773956,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 53.099999487400055,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 488.39999997615814,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 960.7999995350838,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 99.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.699999988079071,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 39.19999998807907,
+          "calls": 2
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 2,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 391.2999999523163,
+      "painted": 422.69999998807907,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 271.5,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 2.900000035762787,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.6999999284744263,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 94.70000004768372,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.30000001192092896,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 40.19999998807907,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 18.900000035762787,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 2,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 1049.800000011921,
+      "painted": 1075.199999988079,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 201,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 2196
+        },
+        "layout": {
+          "ms": 4.800000011920929,
+          "calls": 1
+        },
+        "read": {
+          "ms": 301.9999986886978,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 63.500001549720764,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 349.99999952316284,
+          "calls": 2195
+        },
+        "splitGlyph": {
+          "ms": 780.9999997019768,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 26.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.5,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 15.800000011920929,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 12.699999988079071,
+          "calls": 1
+        }
+      },
+      "parts": 2195
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 2,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 2942.900000035763,
+      "painted": 2997,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 214.30000001192093,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 10013
+        },
+        "layout": {
+          "ms": 4.899999976158142,
+          "calls": 1
+        },
+        "read": {
+          "ms": 92.799999833107,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 62.9999994635582,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 53.700000643730164,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 1602.0999996066093,
+          "calls": 10012
+        },
+        "splitGlyph": {
+          "ms": 1880.9999997615814,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 373.89999997615814,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 3.199999988079071,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 454.99999994039536,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 422.30000001192093,
+          "calls": 1
+        }
+      },
+      "parts": 10012
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 2,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 2249.2999999523163,
+      "painted": 2282.699999988079,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 1128.5,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 4.599999964237213,
+          "calls": 1
+        },
+        "read": {
+          "ms": 71.30000078678131,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 61.29999923706055,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 37.599999725818634,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 714.100000679493,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 927.9000000357628,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 124.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.6000000238418579,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 62.30000001192093,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 39,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 2,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 1782.6000000238419,
+      "painted": 1819.5,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "resize": {
+          "ms": 43.5,
+          "calls": 2
+        },
+        "waitForPaint": {
+          "ms": 640.3000000119209,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 141.30000001192093,
+          "calls": 1
+        },
+        "read": {
+          "ms": 261.30000126361847,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 59.39999860525131,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 39.89999973773956,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 432.9000008702278,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 842.8000001311302,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 78.39999997615814,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 1.0999999642372131,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 58.199999928474426,
+          "calls": 2
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 2,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 365.19999998807907,
+      "painted": 418.2999999523163,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 267,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 4.899999976158142,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 5.799999952316284,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 67,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.8999999761581421,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 34.90000003576279,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 18.5,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 2,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 427,
+      "painted": 445.5999999642372,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 187.89999997615814,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 2196
+        },
+        "layout": {
+          "ms": 2.600000023841858,
+          "calls": 1
+        },
+        "pieces": {
+          "ms": 198.70000010728836,
+          "calls": 2195
+        },
+        "splitGlyph": {
+          "ms": 206.00000005960464,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 14.800000011920929,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 13.300000011920929,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 9.300000011920929,
+          "calls": 1
+        }
+      },
+      "parts": 2195
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 2,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 2515.100000023842,
+      "painted": 2569.5,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 613.6999999880791,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 10013
+        },
+        "layout": {
+          "ms": 2.700000047683716,
+          "calls": 1
+        },
+        "cells": {
+          "ms": 39.39999961853027,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 1393.1000003814697,
+          "calls": 10012
+        },
+        "splitGlyph": {
+          "ms": 1456.299999654293,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 172,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 2,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 86.39999997615814,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 52.39999997615814,
+          "calls": 1
+        }
+      },
+      "parts": 10012
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 2,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 2119.800000011921,
+      "painted": 2141.900000035763,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 1178.8999999761581,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 3.900000035762787,
+          "calls": 1
+        },
+        "cells": {
+          "ms": 32.89999943971634,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 796.2000002861023,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 845.5999999642372,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 46.19999998807907,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.3999999761581421,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 42.30000001192093,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 27.400000035762787,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 3,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 1837.5999999642372,
+      "painted": 1864.5,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "resize": {
+          "ms": 35,
+          "calls": 2
+        },
+        "waitForPaint": {
+          "ms": 660.6999999880791,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 152.5,
+          "calls": 1
+        },
+        "read": {
+          "ms": 274.6000011563301,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 61.79999840259552,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 37.40000122785568,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 451.29999977350235,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 876.5000001192093,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 73.90000003576279,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 1.0999999642372131,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 39.5,
+          "calls": 2
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 3,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 391.4000000357628,
+      "painted": 422.5,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 281.80000001192093,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 4.100000023841858,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 3.5,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 83.09999996423721,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.5,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 32.90000003576279,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 17.600000023841858,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 3,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 427.0999999642372,
+      "painted": 443.30000001192093,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 185.70000004768372,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 2196
+        },
+        "layout": {
+          "ms": 2.299999952316284,
+          "calls": 1
+        },
+        "pieces": {
+          "ms": 201.69999998807907,
+          "calls": 2195
+        },
+        "splitGlyph": {
+          "ms": 210.6000000834465,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 14.599999964237213,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 11.699999988079071,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 9,
+          "calls": 1
+        }
+      },
+      "parts": 2195
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 3,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 2658.699999988079,
+      "painted": 2720.7999999523163,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 623,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 10013
+        },
+        "layout": {
+          "ms": 3,
+          "calls": 1
+        },
+        "cells": {
+          "ms": 46.500000953674316,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 1537.699999988079,
+          "calls": 10012
+        },
+        "splitGlyph": {
+          "ms": 1609.3000002503395,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 203.19999998807907,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 1.899999976158142,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 225.6000000834465,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 181.9000000357628,
+          "calls": 1
+        }
+      },
+      "parts": 10012
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 3,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 2082.7999999523163,
+      "painted": 2106.7999999523163,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 1277.5,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 4.5,
+          "calls": 1
+        },
+        "cells": {
+          "ms": 36.700000524520874,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 648.0000003576279,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 700.5000000596046,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 51.80000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 1.100000023841858,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 47.799999952316284,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 30.69999998807907,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 3,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 1653.5,
+      "painted": 1680.699999988079,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "resize": {
+          "ms": 33.40000003576279,
+          "calls": 2
+        },
+        "waitForPaint": {
+          "ms": 502.10000002384186,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 140.69999998807907,
+          "calls": 1
+        },
+        "read": {
+          "ms": 267.5000004172325,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 56.700000405311584,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 40.79999989271164,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 438.29999977350235,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 837.1000003218651,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 105.29999995231628,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 1.2999999523162842,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 39.5,
+          "calls": 2
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 3,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 435.30000001192093,
+      "painted": 462.80000001192093,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 304.39999997615814,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 6.300000011920929,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 2.600000023841858,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 97.80000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.5,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 33.39999997615814,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 18.30000001192093,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 3,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 820.1999999880791,
+      "painted": 836.8000000119209,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 187.60000002384186,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 2196
+        },
+        "layout": {
+          "ms": 4.299999952316284,
+          "calls": 1
+        },
+        "read": {
+          "ms": 234.40000039339066,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 51.49999964237213,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 261.9999997019768,
+          "calls": 2195
+        },
+        "splitGlyph": {
+          "ms": 580.3000001907349,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 22.099999964237213,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.5,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 12.899999976158142,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 10.399999976158142,
+          "calls": 1
+        }
+      },
+      "parts": 2195
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 3,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 2556.100000023842,
+      "painted": 3001.100000023842,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 273.80000001192093,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 10013
+        },
+        "layout": {
+          "ms": 4.099999964237213,
+          "calls": 1
+        },
+        "read": {
+          "ms": 89.49999886751175,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 56.499999821186066,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 52.10000157356262,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 1536.400000989437,
+          "calls": 10012
+        },
+        "splitGlyph": {
+          "ms": 1795.0000003576279,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 374.39999997615814,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.8999999761581421,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 490.0999999642372,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 64.10000002384186,
+          "calls": 1
+        }
+      },
+      "parts": 10012
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 3,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 2055.699999988079,
+      "painted": 2078.699999988079,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.19999998807907104,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 1093.9000000357628,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 3.899999976158142,
+          "calls": 1
+        },
+        "read": {
+          "ms": 64.3000009059906,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 49.59999883174896,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 31.50000011920929,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 640.0000004768372,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 819.1000001430511,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 93,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.5,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 44.30000001192093,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 27.900000035762787,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 4,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 1694.7999999523163,
+      "painted": 1722.5,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "resize": {
+          "ms": 47.09999996423721,
+          "calls": 2
+        },
+        "waitForPaint": {
+          "ms": 556.6999999880791,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 138.9000000357628,
+          "calls": 1
+        },
+        "read": {
+          "ms": 263.19999957084656,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 52.59999930858612,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 42.39999967813492,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 425.3000013232231,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 817.0000001788139,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 101.80000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.800000011920929,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 49.10000002384186,
+          "calls": 2
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 4,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 395.39999997615814,
+      "painted": 422.89999997615814,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 277.19999998807907,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 3.900000035762787,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.9999999403953552,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 92.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.6000000238418579,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 33,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 17.899999976158142,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 4,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 807.3000000119209,
+      "painted": 824.8000000119209,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 188.5,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 2196
+        },
+        "layout": {
+          "ms": 2.699999988079071,
+          "calls": 1
+        },
+        "read": {
+          "ms": 228.80000060796738,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 52.0999995470047,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 254.69999980926514,
+          "calls": 2195
+        },
+        "splitGlyph": {
+          "ms": 562.9000000953674,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 29.900000035762787,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.5,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 12.700000047683716,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 9.600000023841858,
+          "calls": 1
+        }
+      },
+      "parts": 2195
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 4,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 2344.699999988079,
+      "painted": 2400.599999964237,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 245.69999998807907,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 10013
+        },
+        "layout": {
+          "ms": 3.199999988079071,
+          "calls": 1
+        },
+        "read": {
+          "ms": 71.19999992847443,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 54.1000000834465,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 256.30000030994415,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 1223.6000003814697,
+          "calls": 10012
+        },
+        "splitGlyph": {
+          "ms": 1656.6000000238419,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 353.39999997615814,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.800000011920929,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 85.59999996423721,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 51.69999998807907,
+          "calls": 1
+        }
+      },
+      "parts": 10012
+    },
+    {
+      "variant": "before",
+      "kind": "unique",
+      "trial": 4,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 2317.899999976158,
+      "painted": 2349.899999976158,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 1152.300000011921,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 3.800000011920929,
+          "calls": 1
+        },
+        "read": {
+          "ms": 67.89999920129776,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 53.00000071525574,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 30.400000751018524,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 817.300000667572,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 1007.7000007629395,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 104,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.7999999523162842,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 44.90000003576279,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 27.5,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 4,
+      "step": "initial",
+      "fragmentation": 50,
+      "ready": 1902.8999999761581,
+      "painted": 1933,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "resize": {
+          "ms": 39,
+          "calls": 2
+        },
+        "waitForPaint": {
+          "ms": 792,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 135.80000001192093,
+          "calls": 1
+        },
+        "read": {
+          "ms": 264.49999952316284,
+          "calls": 1000
+        },
+        "connected": {
+          "ms": 57.89999997615814,
+          "calls": 1000
+        },
+        "cells": {
+          "ms": 37.69999939203262,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 426.60000067949295,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 835.4000000357628,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 70.30000001192093,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.7000000476837158,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 48.700000047683716,
+          "calls": 2
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 4,
+      "step": "same",
+      "fragmentation": 50,
+      "ready": 371.0999999642372,
+      "painted": 431,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.10000002384185791,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 289.0999999642372,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 1
+        },
+        "layout": {
+          "ms": 2.800000011920929,
+          "calls": 1
+        },
+        "splitGlyph": {
+          "ms": 1.7999999523162842,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 52.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.30000001192092896,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 38.69999998807907,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 23.5,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 4,
+      "step": "components",
+      "fragmentation": 35,
+      "ready": 428.80000001192093,
+      "painted": 445.69999998807907,
+      "totals": {
+        "fontLoad": {
+          "ms": 0.09999996423721313,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 183.10000002384186,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 2196
+        },
+        "layout": {
+          "ms": 3.399999976158142,
+          "calls": 1
+        },
+        "pieces": {
+          "ms": 200.49999982118607,
+          "calls": 2195
+        },
+        "splitGlyph": {
+          "ms": 210.5,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 15.399999976158142,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 0.699999988079071,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 12.700000047683716,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 8.899999976158142,
+          "calls": 1
+        }
+      },
+      "parts": 2195
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 4,
+      "step": "crumbs",
+      "fragmentation": 90,
+      "ready": 2426.5,
+      "painted": 2478.5,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 588.3999999761581,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 10013
+        },
+        "layout": {
+          "ms": 2.699999988079071,
+          "calls": 1
+        },
+        "cells": {
+          "ms": 45.30000078678131,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 1483.8999997973442,
+          "calls": 10012
+        },
+        "splitGlyph": {
+          "ms": 1551.5000003576279,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 196.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 1.5,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 91.59999996423721,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 55,
+          "calls": 1
+        }
+      },
+      "parts": 10012
+    },
+    {
+      "variant": "final",
+      "kind": "unique",
+      "trial": 4,
+      "step": "back",
+      "fragmentation": 50,
+      "ready": 2722.699999988079,
+      "painted": 2752.800000011921,
+      "totals": {
+        "fontLoad": {
+          "ms": 0,
+          "calls": 1
+        },
+        "waitForPaint": {
+          "ms": 1411.2999999523163,
+          "calls": 1
+        },
+        "canvas": {
+          "ms": 0,
+          "calls": 4878
+        },
+        "layout": {
+          "ms": 3.300000011920929,
+          "calls": 1
+        },
+        "cells": {
+          "ms": 36.69999951124191,
+          "calls": 1000
+        },
+        "pieces": {
+          "ms": 740.6000008583069,
+          "calls": 4877
+        },
+        "splitGlyph": {
+          "ms": 1187.0000002980232,
+          "calls": 1000
+        },
+        "neighbors": {
+          "ms": 57.5,
+          "calls": 1
+        },
+        "recolor": {
+          "ms": 1.199999988079071,
+          "calls": 1
+        },
+        "dimensionWrites": {
+          "calls": 2
+        },
+        "draw": {
+          "ms": 56.39999997615814,
+          "calls": 2
+        },
+        "resize": {
+          "ms": 41.09999996423721,
+          "calls": 1
+        }
+      },
+      "parts": 4877
+    }
+  ]
+}
